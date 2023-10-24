@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+	<head>
+		<meta charset="UTF-8">
+		<title>Оформления заказа</title>
+		<meta name="description" content="Joy">
+		<meta name="author" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="keywords" content=""><!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+<!-- ICO-->
+		<link rel="shortcut icon" type="image/png" href="./img/favicon/Atom100x100.png">
+		<link rel="apple-touch-icon" href="./img/favicon/Atom57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/Atom72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/Atom114x114.png"><!--LIBS-CSS-->
+		<link rel="stylesheet" type="text/css" href="./libs/libs.min.css">
+		<link rel="preload" href="./css/fonts.css" as="style">
+		<link rel="stylesheet" type="text/css" href="./css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="./libs/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./libs/order-default.css"><!--MAIN-CSS -->
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+	</head>
+	<body><i class="_cursor"></i>
+		<header class="header">
+			<div class="header-top">
+				<div class="header-top__wrp">
+					<div class="header-top__info">
+						<div class="header-top__hours"><span>Доставка: от</span><span class="bold">39 минут</span></div>
+						<div class="header-top__tel">
+							<div class="header-top__tel-img">
+								<svg class="icon icon-tel ">
+									<use xlink:href="./img/svg/symbol/sprite.svg#tel"></use>
+								</svg>
+							</div>
+							<div class="header-top__tel-links"><a href="tel:+375 (29) 333-19-33">+375 (29) 333-19-13</a></div>
+						</div>
+					</div>
+					<div class="header-top__account"><a class="header-top__person" href="#">
+							<svg class="icon icon-acc ">
+								<use xlink:href="./img/svg/symbol/sprite.svg#acc"></use>
+							</svg>
+							<div class="header-top__person-text"><span>Ковалева Елизавета</span><span class="bold">Баллов: 30</span></div></a><a class="header-top__person _basket" href="#">
+							<svg class="icon icon-basket ">
+								<use xlink:href="./img/svg/symbol/sprite.svg#basket"></use>
+							</svg>
+							<div class="header-top__person-text"><span>Товаров: 1</span><span class="bold">Сумма: 25 BYN</span></div></a></div>
+				</div>
+			</div><a class="header-logo" href="./"><img class="lazy" src="./img/src.gif" data-src="./img/logo.svg"></a>
+			<div class="header-menu">
+				<ul>
+					<li class="active"><a href="#"><img src="./img/svg/pizza.svg"><span>Пицца</span></a></li>
+					<li><a href="#"><img src="./img/svg/roll-sets.svg"><span>Ролл-сеты</span></a></li>
+					<li><a href="#"><img src="./img/svg/baked-rolls.svg"><span>Запеченные роллы</span></a></li>
+					<li><a href="#"><img src="./img/svg/rolls.svg"><span>Роллы</span></a></li>
+					<li><a href="#"><img src="./img/svg/tempura.svg"><span>Темпура-роллы</span></a></li>
+					<li><a href="#"><img src="./img/svg/maki.svg"><span>Маки роллы</span></a></li>
+					<li><a href="#"><img src="./img/svg/nigiri.svg"><span>Нигири, гунканы, сашими</span></a></li>
+					<li><a href="#"><img src="./img/svg/garnish.svg"><span>Гарниры</span></a></li>
+					<li><a href="#"><img src="./img/svg/drinks.svg"><span>Напитки</span></a></li>
+				</ul>
+				<div class="header-menu__footer"></div>
+				<!--.lp-pop-->
+			</div>
+			<div class="header-socials js-header__socials">
+				<div class="header-socials__zag">Мы в социальных сетях</div>
+				<div class="header-socials__items"><a class="header-socials__item" href="https://vk.com/durov">
+						<svg class="icon icon-vk ">
+							<use xlink:href="./img/svg/symbol/sprite.svg#vk"></use>
+						</svg></a><a class="header-socials__item" href="https://www.facebook.com/TheElonmusk/">
+						<svg class="icon icon-fb ">
+							<use xlink:href="./img/svg/symbol/sprite.svg#fb"></use>
+						</svg></a><a class="header-socials__item" href="https://www.instagram.com/joypizza.by/">
+						<svg class="icon icon-inst ">
+							<use xlink:href="./img/svg/symbol/sprite.svg#inst"></use>
+						</svg></a><a class="header-socials__item" href="https://youtu.be/2H0-uqGNDtw">
+						<svg class="icon icon-youtube ">
+							<use xlink:href="./img/svg/symbol/sprite.svg#youtube"></use>
+						</svg></a></div>
+			</div>
+			<div class="header-burger xmd-show">
+				<div class="hamburger" id="hamburger"><span class="line"></span><span class="line"></span><span class="line"></span></div>
+			</div>
+		</header>
+		<main>
+			<div class="wrp">
+				<div class="content">
+					<div class="page-head">
+						<div class="breadcrumbs">
+							<div class="bx-breadcrumb">
+								<div class="bx-breadcrumb-item" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" itemref="bx_breadcrumb_1"><a class="link" href="/" title="site-name" itemprop="url"><span itemprop="title">Главная</span></a></div>
+								<div class="breadcrumbs-circle"></div>
+								<div class="bx-breadcrumb-item"><span>Оформления заказа</span></div>
+							</div>
+						</div>
+						<h1>Оформления заказа</h1>
+						<!--
+						В каждом блоке есть классы:
+						bx-selected - означает что шаг открыт. Также для доставок, оплат и складов самовывоза определяет выбранный пункт и устанавливается на соответсвующий блок.
+						bx-active лучше для стилизации не использовать!!! Он служебный.
+						bx-step-completed - шаг пройден (не использовать если все шаги открыты)
+						bx-step-error - на данном шаге случилась ошибка.
+						Все блоки и их составные части можно перемещать, но без фанатизма. Лучше заранее уточнить у бэка по составным частям.
+						-->
+					</div>
+					<form id="bx-soa-order-form" action="/" method="POST" name="ORDER_FORM" enctype="multipart/form-data">
+						<div class="row bx-blue" id="bx-soa-order">
+							<div class="col-sm-9 bx-soa">
+								<!-- Начало блока нотификаций-->
+								<div id="bx-soa-main-notifications">
+									<!-- Начало блока общих ошибок пример http://prntscr.com/10w0slx-->
+									<div class="alert alert-danger"></div>
+									<!-- Конец блока нотификаций-->
+									<!-- Начало блока уведомлений пример http://prntscr.com/10w0slx-->
+									<div class="alert alert-success" data-type="informer">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="icon-success"></div>
+												<div>&Vcy;&ycy; &zcy;&acy;&kcy;&acy;&zcy;&ycy;&vcy;&acy;&lcy;&icy; &vcy; &ncy;&acy;&shcy;&iecy;&mcy; &icy;&ncy;&tcy;&iecy;&rcy;&ncy;&iecy;&tcy;-&mcy;&acy;&gcy;&acy;&zcy;&icy;&ncy;&iecy;, &pcy;&ocy;&ecy;&tcy;&ocy;&mcy;&ucy; &mcy;&ycy; &zcy;&acy;&pcy;&ocy;&lcy;&ncy;&icy;&lcy;&icy; &vcy;&scy;&iecy; &dcy;&acy;&ncy;&ncy;&ycy;&iecy; &acy;&vcy;&tcy;&ocy;&mcy;&acy;&tcy;&icy;&chcy;&iecy;&scy;&kcy;&icy;.<br>&IEcy;&scy;&lcy;&icy; &vcy;&scy;&iecy; &zcy;&acy;&pcy;&ocy;&lcy;&ncy;&iecy;&ncy;&ocy; &vcy;&iecy;&rcy;&ncy;&ocy;, &ncy;&acy;&zhcy;&mcy;&icy;&tcy;&iecy; &kcy;&ncy;&ocy;&pcy;&kcy;&ucy; &quot;&Ocy;&fcy;&ocy;&rcy;&mcy;&icy;&tcy;&softcy; &zcy;&acy;&kcy;&acy;&zcy;&quot;.</div>
+											</div>
+										</div>
+									</div>
+									<!-- Конец блока уведомлений-->
+								</div>
+								<!-- Конец блока нотификаций-->
+								<!-- Начало блока авторизации-->
+								<div class="bx-soa-section bx-soa-auth" id="bx-soa-auth" style="display:none">
+									<div class="bx-soa-section-title-container">
+										<h2 class="bx-soa-section-title col-sm-9"><span class="bx-soa-section-title-count"></span>&Acy;&vcy;&tcy;&ocy;&rcy;&icy;&zcy;&acy;&tscy;&icy;&yacy;</h2>
+									</div>
+									<div class="bx-soa-section-content container-fluid"></div>
+								</div>
+								<!-- Конец блока авторизации-->
+								<!-- Начало мобильного блока ИТОГО-->
+								<div class="visible-xs" id="bx-soa-total-mobile">
+									<div class="bx-soa-cart-total bx-soa-cart-total-fixed">
+										<div class="bx-soa-cart-total-line"><span class="bx-soa-cart-t">&Tcy;&ocy;&vcy;&acy;&rcy;&ocy;&vcy; &ncy;&acy;:</span><span class="bx-soa-cart-d">0.16 &rcy;&ucy;&bcy;.<br><span class="bx-price-old">0.18 &rcy;&ucy;&bcy;.</span></span></div>
+										<div class="bx-soa-cart-total-line"><span class="bx-soa-cart-t">&Dcy;&ocy;&scy;&tcy;&acy;&vcy;&kcy;&acy;:</span><span class="bx-soa-cart-d">100 &rcy;&ucy;&bcy;.</span></div>
+										<div class="bx-soa-cart-total-line bx-soa-cart-total-line-highlighted"><span class="bx-soa-cart-t">&Ecy;&kcy;&ocy;&ncy;&ocy;&mcy;&icy;&yacy;:</span><span class="bx-soa-cart-d">0.02 &rcy;&ucy;&bcy;.</span></div>
+										<div class="bx-soa-cart-total-line bx-soa-cart-total-line-total"><span class="bx-soa-cart-t">&Icy;&tcy;&ocy;&gcy;&ocy;:</span><span class="bx-soa-cart-d">100.16 &rcy;&ucy;&bcy;.</span></div>
+										<div class="bx-soa-cart-total-button-container visible-xs"><a class="btn btn-default btn-lg btn-order-save" href="javascript:void(0)">&Ocy;&fcy;&ocy;&rcy;&mcy;&icy;&tcy;&softcy; &zcy;&acy;&kcy;&acy;&zcy;</a></div>
+									</div>
+								</div>
+								<!-- Конец мобильного блока ИТОГО-->
+								<!-- Блок товаров-->
+								<div class="bx-soa-section bx-active bx-selected" id="bx-soa-basket" data-visited="true">
+									<!-- Шапка любого шага-->
+									<div class="bx-soa-section-title-container">
+										<h2 class="bx-soa-section-title col-sm-9"><span class="bx-soa-section-title-count"></span>&Tcy;&ocy;&vcy;&acy;&rcy;&ycy; &vcy; &zcy;&acy;&kcy;&acy;&zcy;&iecy;</h2>
+										<div class="col-xs-12 col-sm-3 text-right"><a class="bx-soa-editstep" href="javascript:void(0)">&icy;&zcy;&mcy;&iecy;&ncy;&icy;&tcy;&softcy;</a></div>
+									</div>
+									<!-- Конец шапки шага-->
+									<div class="bx-soa-section-content container-fluid">
+										<div class="bx-soa-table-fade">
+											<div style="overflow: auto hidden;">
+												<div class="bx-soa-item-table">
+													<!-- Блок товара-->
+													<div class="bx-soa-item-tr bx-soa-basket-info bx-soa-item-tr-first">
+														<div class="bx-soa-item-td">
+															<div class="bx-soa-item-block">
+																<div class="bx-soa-item-img-block"><a href="/catalog/t-shirts/t-shirt-men-s-fire/">
+																		<div class="bx-soa-item-imgcontainer" style="background-image: url(&quot;/upload/resize_cache/iblock/1d0/160_160_1/1d0eb97a3da15780133848cd7f79339a.jpg&quot;);background-image: -webkit-image-set(url(&quot;/upload/resize_cache/iblock/1d0/160_160_1/1d0eb97a3da15780133848cd7f79339a.jpg&quot;) 1x, url(&quot;/upload/resize_cache/iblock/1d0/320_320_1/1d0eb97a3da15780133848cd7f79339a.jpg&quot;) 2x)"></div></a></div>
+																<div class="bx-soa-item-content">
+																	<div class="bx-soa-item-title"><a href="/catalog/t-shirts/t-shirt-men-s-fire/">&Fcy;&ucy;&tcy;&bcy;&ocy;&lcy;&kcy;&acy; &Mcy;&ucy;&zhcy;&scy;&kcy;&ocy;&jcy; &Ocy;&gcy;&ocy;&ncy;&softcy;</a></div>
+																</div>
+															</div>
+														</div>
+														<div class="bx-soa-item-td bx-soa-item-properties">
+															<div class="bx-soa-item-td-title visible-xs visible-sm">&Acy;&rcy;&tcy;&icy;&kcy;&ucy;&lcy;</div>
+															<div class="bx-soa-item-td-text"><span>137-14-03</span><br></div>
+														</div>
+														<div class="bx-soa-item-td bx-soa-item-properties">
+															<div class="bx-soa-item-td-title visible-xs visible-sm">&TScy;&vcy;&iecy;&tcy;</div>
+															<div class="bx-soa-item-td-text"></div>
+														</div>
+														<div class="bx-soa-item-td bx-soa-item-properties bx-text-right">
+															<div class="bx-soa-item-td-title visible-xs visible-sm">&TScy;&iecy;&ncy;&acy;</div>
+															<div class="bx-soa-item-td-text"><strong class="bx-price">0.08 &rcy;&ucy;&bcy;.</strong><br><strong class="bx-price-old">0.09 &rcy;&ucy;&bcy;.</strong></div>
+														</div>
+														<div class="bx-soa-item-td bx-soa-item-properties">
+															<div class="bx-soa-item-td-title visible-xs visible-sm">&Vcy;&iecy;&scy;</div>
+															<div class="bx-soa-item-td-text"><span>0 &kcy;&gcy;</span></div>
+														</div>
+														<div class="bx-soa-item-nth-4p1"></div>
+														<div class="bx-soa-item-td bx-soa-item-properties bx-text-right">
+															<div class="bx-soa-item-td-title visible-xs visible-sm">&Kcy;&ocy;&lcy;&icy;&chcy;&iecy;&scy;&tcy;&vcy;&ocy;</div>
+															<div class="bx-soa-item-td-text"><span>2&nbsp;&shcy;&tcy;</span></div>
+														</div>
+														<div class="bx-soa-item-td bx-soa-item-properties bx-text-right">
+															<div class="bx-soa-item-td-title visible-xs visible-sm">&Scy;&ucy;&mcy;&mcy;&acy;</div>
+															<div class="bx-soa-item-td-text"><strong class="bx-price all">0.16 &rcy;&ucy;&bcy;.</strong><br><strong class="bx-price-old">0.18 &rcy;&ucy;&bcy;.</strong></div>
+														</div>
+													</div>
+													<!-- Конец блока товара-->
+												</div>
+											</div>
+										</div>
+										<!-- Начало блока для ввода купона http://prntscr.com/10w7exv-->
+										<div class="bx-soa-coupon">
+											<div class="bx-soa-coupon-label">
+												<label>&Pcy;&rcy;&icy;&mcy;&iecy;&ncy;&icy;&tcy;&softcy; &kcy;&ucy;&pcy;&ocy;&ncy;:</label>
+											</div>
+											<div class="bx-soa-coupon-block">
+												<div class="bx-soa-coupon-input">
+													<input class="form-control bx-ios-fix" type="text">
+												</div><span class="bx-soa-coupon-item">
+													<!-- Успешно введенный купон--><strong class="bx-soa-coupon-item-success" data-coupon="SL-Y6RJF-RX3Y9ZJ">SL-Y6RJF-RX3Y9ZJ<span class="bx-soa-coupon-remove"></span><span class="bx-soa-tooltip bx-soa-tooltip-coupon bx-soa-tooltip-success tooltip top"><span class="tooltip-arrow"></span><span class="tooltip-inner">&Pcy;&rcy;&icy;&mcy;&iecy;&ncy;&iecy;&ncy;</span></span></strong>
+													<!-- Неудачный купон--><strong class="bx-soa-coupon-item-danger" data-coupon="fdsfdf">fdsfdf<span class="bx-soa-coupon-remove"></span><span class="bx-soa-tooltip bx-soa-tooltip-coupon bx-soa-tooltip-danger tooltip top"><span class="tooltip-arrow"></span><span class="tooltip-inner">&Ncy;&iecy; &ncy;&acy;&jcy;&dcy;&iecy;&ncy;</span></span></strong></span>
+											</div>
+										</div>
+										<!-- Конец блока для ввода купона-->
+										<!-- Начало блока с кнопкой далее-->
+										<div class="row bx-soa-more">
+											<div class="bx-soa-more-btn col-xs-12"><a class="pull-right btn btn-default btn-md" href="javascript:void(0)">&Dcy;&acy;&lcy;&iecy;&iecy;</a></div>
+										</div>
+										<!-- Конец блока с кнопкой далее-->
+									</div>
+									<!-- Начало мобильного блока ИТОГО не знаю нахера... Думаю можно сносить..-->
+									<div class="visible-xs" id="bx-soa-total-mobile">
+										<div class="bx-soa-cart-total bx-soa-cart-total-fixed">
+											<div class="bx-soa-cart-total-line"><span class="bx-soa-cart-t">&Tcy;&ocy;&vcy;&acy;&rcy;&ocy;&vcy; &ncy;&acy;:</span><span class="bx-soa-cart-d">0.16 &rcy;&ucy;&bcy;.<br><span class="bx-price-old">0.18 &rcy;&ucy;&bcy;.</span></span></div>
+											<div class="bx-soa-cart-total-line"><span class="bx-soa-cart-t">&Dcy;&ocy;&scy;&tcy;&acy;&vcy;&kcy;&acy;:</span><span class="bx-soa-cart-d">100 &rcy;&ucy;&bcy;.</span></div>
+											<div class="bx-soa-cart-total-line bx-soa-cart-total-line-highlighted"><span class="bx-soa-cart-t">&Ecy;&kcy;&ocy;&ncy;&ocy;&mcy;&icy;&yacy;:</span><span class="bx-soa-cart-d">0.02 &rcy;&ucy;&bcy;.</span></div>
+											<div class="bx-soa-cart-total-line bx-soa-cart-total-line-total"><span class="bx-soa-cart-t">&Icy;&tcy;&ocy;&gcy;&ocy;:</span><span class="bx-soa-cart-d">100.16 &rcy;&ucy;&bcy;.</span></div>
+											<div class="bx-soa-cart-total-button-container visible-xs"><a class="btn btn-default btn-lg btn-order-save" href="javascript:void(0)">&Ocy;&fcy;&ocy;&rcy;&mcy;&icy;&tcy;&softcy; &zcy;&acy;&kcy;&acy;&zcy;</a></div>
+										</div>
+									</div>
+									<!-- Конец мобильного блока ИТОГО-->
+								</div>
+								<!-- Конец блока товаров-->
+								<!-- Начало блока выбора местоположения и выбора лица-->
+								<div class="bx-soa-section bx-active bx-selected" id="bx-soa-region" data-visited="true">
+									<!-- Шапка любого шага-->
+									<div class="bx-soa-section-title-container">
+										<h2 class="bx-soa-section-title col-sm-9"><span class="bx-soa-section-title-count"></span>&Rcy;&iecy;&gcy;&icy;&ocy;&ncy; &dcy;&ocy;&scy;&tcy;&acy;&vcy;&kcy;&icy;</h2>
+										<div class="col-xs-12 col-sm-3 text-right"><a class="bx-soa-editstep" href="">&icy;&zcy;&mcy;&iecy;&ncy;&icy;&tcy;&softcy;</a></div>
+									</div>
+									<!-- Конец шапки шага-->
+									<div class="bx-soa-section-content container-fluid">
+										<!-- Блок ошибки-->
+										<div class="alert alert-danger">
+											<div>&Pcy;&ocy;&lcy;&iecy; &quot;&Mcy;&iecy;&scy;&tcy;&ocy;&pcy;&ocy;&lcy;&ocy;&zhcy;&iecy;&ncy;&icy;&iecy;&quot; &ocy;&bcy;&yacy;&zcy;&acy;&tcy;&iecy;&lcy;&softcy;&ncy;&ocy; &dcy;&lcy;&yacy; &zcy;&acy;&pcy;&ocy;&lcy;&ncy;&iecy;&ncy;&icy;&yacy;</div>
+										</div>
+										<!-- Конец блока ошибки-->
+										<div class="bx_soa_location row">
+											<div class="col-xs-12">
+												<!-- Блок выбора плательщика-->
+												<div class="form-group">
+													<label class="bx-soa-custom-label">&Tcy;&icy;&pcy; &pcy;&lcy;&acy;&tcy;&iecy;&lcy;&softcy;&shchcy;&icy;&kcy;&acy;</label><br>
+													<div class="radio-inline">
+														<label>
+															<input checked="true" type="radio" name="PERSON_TYPE" value="1">&Fcy;&icy;&zcy;&icy;&chcy;&iecy;&scy;&kcy;&ocy;&iecy; &lcy;&icy;&tscy;&ocy;
+														</label>
+													</div><br>
+													<div class="radio-inline">
+														<label>
+															<input type="radio" name="PERSON_TYPE" value="2">&YUcy;&rcy;&icy;&dcy;&icy;&chcy;&iecy;&scy;&kcy;&ocy;&iecy; &lcy;&icy;&tscy;&ocy;
+														</label>
+													</div>
+													<input type="hidden" name="PERSON_TYPE_OLD" value="1">
+												</div>
+												<!-- Конец блока выбора плательщика-->
+												<input name="PROFILE_ID" type="hidden" value="5">
+												<!-- Блок выбора местоположения http://prntscr.com/10w7r8f-->
+												<div class="form-group bx-soa-location-input-container" data-property-id-row="6">
+													<label class="bx-soa-custom-label" for="soa-property-6"><span class="bx-authform-starrequired">*</span> &Mcy;&iecy;&scy;&tcy;&ocy;&pcy;&ocy;&lcy;&ocy;&zhcy;&iecy;&ncy;&icy;&iecy;</label>
+													<div class="bx-sls" id="sls-27930">
+														<!-- Блок быстрого выбора местоположения-->
+														<div class="bx-ui-sls-quick-locations quick-locations"><a class="quick-location-tag" href="javascript:void(0)" data-id="109">&Bcy;&rcy;&iecy;&scy;&tcy;</a><a class="quick-location-tag" href="javascript:void(0)" data-id="146">&Vcy;&icy;&tcy;&iecy;&bcy;&scy;&kcy;</a><a class="quick-location-tag" href="javascript:void(0)" data-id="186">&Gcy;&ocy;&mcy;&iecy;&lcy;&softcy;</a><a class="quick-location-tag" href="javascript:void(0)" data-id="225">&Mcy;&icy;&ncy;&scy;&kcy;</a><a class="quick-location-tag" href="javascript:void(0)" data-id="273">&Mcy;&ocy;&gcy;&icy;&lcy;&iecy;&vcy;</a><a class="quick-location-tag" href="javascript:void(0)" data-id="338">&Gcy;&rcy;&ocy;&dcy;&ncy;&ocy;</a></div>
+														<!-- Конец блока быстрого выбора местоположения-->
+														<!-- Блок ошибки выбора местоположения-->
+														<div class="bx-soa-tooltip bx-soa-tooltip-static bx-soa-tooltip-danger tooltip top" id="tooltip-soa-property-6" data-state="opened">
+															<div class="tooltip-arrow"></div>
+															<div class="tooltip-inner">&Pcy;&ocy;&lcy;&iecy; &ocy;&bcy;&yacy;&zcy;&acy;&tcy;&iecy;&lcy;&softcy;&ncy;&ocy; &dcy;&lcy;&yacy; &zcy;&acy;&pcy;&ocy;&lcy;&ncy;&iecy;&ncy;&icy;&yacy;</div>
+														</div>
+														<!-- Конец блока ошибки выбора местоположения-->
+														<!-- Блок инпута выбора местоположения-->
+														<div class="dropdown-block bx-ui-sls-input-block form-control"><span class="dropdown-icon"></span>
+															<input class="dropdown-field" type="text" autocomplete="off" name="ORDER_PROP_6" value="0000000196" placeholder="Введите название ..." style="display: none;">
+															<div class="bx-ui-sls-container" style="margin: 0px; padding: 0px; border: none; position: relative; display:none">
+																<input class="bx-ui-sls-route" type="text" disabled="disabled" autocomplete="off" style="padding: 0px; margin: 0px;">
+																<input class="bx-ui-sls-fake" type="text" autocomplete="off" value="0000000196" placeholder="Введите название ..." title="Могилев, Могилёвская область, Беларусь">
+															</div>
+															<div class="dropdown-fade2white"></div>
+															<div class="bx-ui-sls-loader"></div>
+															<div class="bx-ui-sls-clear" title="Отменить выбор" style="display: block;"></div>
+															<!-- Дропдаун выбора местоположений-->
+															<div class="bx-ui-sls-pane" style="overflow: hidden auto; display: block; top: 35px; bottom: auto;">
+																<div class="bx-ui-sls-variants">
+																	<div class="dropdown-item bx-ui-sls-variant bx-ui-sls-variant-active"><span class="dropdown-item-text"><span>&Mcy;&ocy;&gcy;&icy;&lcy;&iecy;&vcy;</span>, &Mcy;&ocy;&gcy;&icy;&lcy;&iocy;&vcy;&scy;&kcy;&acy;&yacy; &ocy;&bcy;&lcy;&acy;&scy;&tcy;&softcy;, &Bcy;&iecy;&lcy;&acy;&rcy;&ucy;&scy;&softcy;</span></div>
+																	<div class="dropdown-item bx-ui-sls-variant"><span class="dropdown-item-text">&Mcy;&ocy;&gcy;&icy;&lcy;&iocy;&vcy;&scy;&kcy;&icy;&jcy; &rcy;&acy;&jcy;&ocy;&ncy;, &Mcy;&ocy;&gcy;&icy;&lcy;&iocy;&vcy;&scy;&kcy;&acy;&yacy; &ocy;&bcy;&lcy;&acy;&scy;&tcy;&softcy;, &Bcy;&iecy;&lcy;&acy;&rcy;&ucy;&scy;&softcy;</span></div>
+																	<div class="dropdown-item bx-ui-sls-variant"><span class="dropdown-item-text">&Mcy;&ocy;&gcy;&icy;&lcy;&iocy;&vcy;&scy;&kcy;&acy;&yacy; &ocy;&bcy;&lcy;&acy;&scy;&tcy;&softcy;, &Bcy;&iecy;&lcy;&acy;&rcy;&ucy;&scy;&softcy;</span></div>
+																</div>
+															</div>
+															<!-- Конец Дропдауна выбора местоположений-->
+														</div>
+														<!-- Конец Блока инпута выбора местоположения-->
+														<div class="bx-ui-sls-error-message"></div>
+													</div>
+												</div>
+												<!-- Конец блока выбора местоположения-->
+												<input type="hidden" name="RECENT_DELIVERY_VALUE" value="0000000196">
+												<!-- Блок дополнительных свойств в даннам блоке-->
+												<!-- Единица блока-->
+												<div class="form-group bx-soa-location-input-container" data-property-id-row="4">
+													<label class="bx-soa-custom-label" for="zipProperty"><span class="bx-authform-starrequired">*</span> &Icy;&ncy;&dcy;&iecy;&kcy;&scy;</label>
+													<input class="form-control bx-soa-customer-input bx-ios-fix" id="zipProperty" type="text" placeholder="" autocomplete="zip" name="ORDER_PROP_4">
+												</div>
+												<!-- Конец Единицы блока-->
+												<!-- Единица блока-->
+												<div class="form-group bx-soa-location-input-container" data-property-id-row="4">
+													<label class="bx-soa-custom-label" for="zipProperty"><span class="bx-authform-starrequired">*</span> &IEcy;&shchcy;&iecy; &kcy;&acy;&kcy;&ocy;&iecy;-&tcy;&ocy; &scy;&vcy;&ocy;&jcy;&scy;&tcy;&ocy;</label>
+													<input class="form-control bx-soa-customer-input bx-ios-fix" id="zipProperty" type="text" placeholder="" autocomplete="zip" name="ORDER_PROP_4">
+												</div>
+												<!-- Конец Единицы блока-->
+												<!-- Единица блока-->
+												<!-- .....-->
+												<!-- Единица блока-->
+												<!-- Конец блока дополнительных свойств-->
+												<input id="ZIP_PROPERTY_CHANGED" name="ZIP_PROPERTY_CHANGED" type="hidden" value="Y">
+												<!-- Блок дополнительного текста-->
+												<div class="bx-soa-reference">&Vcy;&ycy;&bcy;&iecy;&rcy;&icy;&tcy;&iecy; &scy;&vcy;&ocy;&jcy; &gcy;&ocy;&rcy;&ocy;&dcy; &vcy; &scy;&pcy;&icy;&scy;&kcy;&iecy;. &IEcy;&scy;&lcy;&icy; &vcy;&ycy; &ncy;&iecy; &ncy;&acy;&shcy;&lcy;&icy; &scy;&vcy;&ocy;&jcy; &gcy;&ocy;&rcy;&ocy;&dcy;, &vcy;&ycy;&bcy;&iecy;&rcy;&icy;&tcy;&iecy; &quot;&dcy;&rcy;&ucy;&gcy;&ocy;&iecy; &mcy;&iecy;&scy;&tcy;&ocy;&pcy;&ocy;&lcy;&ocy;&zhcy;&iecy;&ncy;&icy;&iecy;&quot;, &acy; &gcy;&ocy;&rcy;&ocy;&dcy; &vcy;&pcy;&icy;&shcy;&icy;&tcy;&iecy; &vcy; &pcy;&ocy;&lcy;&iecy; &quot;&Gcy;&ocy;&rcy;&ocy;&dcy;&quot;</div>
+												<!-- Конец блока дополнительного текста-->
+											</div>
+										</div>
+										<!-- Начало блока с кнопкой далее и назад-->
+										<div class="row bx-soa-more">
+											<div class="bx-soa-more-btn col-xs-12"><a class="pull-left btn btn-default btn-md" href="javascript:void(0)">&Ncy;&acy;&zcy;&acy;&dcy;</a><a class="pull-right btn btn-default btn-md" href="javascript:void(0)">&Dcy;&acy;&lcy;&iecy;&iecy;</a></div>
+										</div>
+										<!-- Конец блока с кнопкой далее и назад-->
+									</div>
+								</div>
+								<!-- Конец блока выбора местоположения и выбора лица-->
+								<!-- Начало блока выбора доставки-->
+								<div class="bx-soa-section bx-active bx-selected" id="bx-soa-delivery" data-visited="true">
+									<!-- Шапка любого шага-->
+									<div class="bx-soa-section-title-container">
+										<h2 class="bx-soa-section-title col-sm-9"><span class="bx-soa-section-title-count"></span>&Dcy;&ocy;&scy;&tcy;&acy;&vcy;&kcy;&acy;</h2>
+										<div class="col-xs-12 col-sm-3 text-right"><a class="bx-soa-editstep" href="">&icy;&zcy;&mcy;&iecy;&ncy;&icy;&tcy;&softcy;</a></div>
+									</div>
+									<!-- Конец шапки шага-->
+									<div class="bx-soa-section-content container-fluid">
+										<!-- Блок ошибки-->
+										<div class="alert alert-danger"></div>
+										<!-- Конец блока ошибки-->
+										<div class="bx-soa-pp row">
+											<div class="col-sm-7 bx-soa-pp-item-container">
+												<!-- Блок одной доставки-->
+												<div class="bx-soa-pp-company col-lg-4 col-sm-4 col-xs-6">
+													<div class="bx-soa-pp-company-graf-container">
+														<input class="bx-soa-pp-company-checkbox" id="ID_DELIVERY_ID_2" name="DELIVERY_ID" type="checkbox" value="2">
+														<div class="bx-soa-pp-company-image" style="background-image: url(&quot;/upload/resize_cache/sale/delivery/logotip/91d/300_300_1/91d59923ff5df6c628946072a755d910.png&quot;);background-image: -webkit-image-set(url(&quot;/upload/resize_cache/sale/delivery/logotip/91d/300_300_1/91d59923ff5df6c628946072a755d910.png&quot;) 1x, url(&quot;/upload/sale/delivery/logotip/91d/91d59923ff5df6c628946072a755d910.png&quot;) 2x)"></div>
+														<div class="bx-soa-pp-delivery-cost">100 &rcy;&ucy;&bcy;.</div>
+													</div>
+													<div class="bx-soa-pp-company-smalltitle">&Dcy;&ocy;&scy;&tcy;&acy;&vcy;&kcy;&acy; &kcy;&ucy;&rcy;&softcy;&iecy;&rcy;&ocy;&mcy;</div>
+												</div>
+												<!-- Конец одной доставки-->
+												<!-- Блок выбранной доставки-->
+												<div class="bx-soa-pp-company col-lg-4 col-sm-4 col-xs-6 bx-selected">
+													<div class="bx-soa-pp-company-graf-container">
+														<input class="bx-soa-pp-company-checkbox" id="ID_DELIVERY_ID_3" name="DELIVERY_ID" type="checkbox" value="3">
+														<div class="bx-soa-pp-company-image" style="background-image: url(&quot;/bitrix/components/bitrix/sale.order.ajax/templates/.default/images/delivery_logo.png&quot;);"></div>
+														<div class="bx-soa-pp-delivery-cost">0 &rcy;&ucy;&bcy;.</div>
+													</div>
+													<div class="bx-soa-pp-company-smalltitle">&Scy;&acy;&mcy;&ocy;&vcy;&ycy;&vcy;&ocy;&zcy;</div>
+												</div>
+												<!-- Конец блока выбранной доставки-->
+												<!-- Блок выбранной доставки-->
+												<!-- .....-->
+												<!-- Блок выбранной доставки-->
+											</div>
+											<!-- Блок описания выбранной доставки-->
+											<div class="col-sm-5 bx-soa-pp-desc-container">
+												<div class="bx-soa-pp-company">
+													<div class="bx-soa-pp-company-subTitle">&Scy;&acy;&mcy;&ocy;&vcy;&ycy;&vcy;&ocy;&zcy;</div>
+													<div class="bx-soa-pp-company-logo">
+														<div class="bx-soa-pp-company-graf-container">
+															<div class="bx-soa-pp-company-image" style="background-image: url(&quot;/bitrix/components/bitrix/sale.order.ajax/templates/.default/images/delivery_logo.png&quot;);"></div>
+														</div>
+													</div>
+													<div class="bx-soa-pp-company-block">
+														<div class="bx-soa-pp-company-desc">&Vcy;&ycy; &mcy;&ocy;&zhcy;&iecy;&tcy;&iecy; &scy;&acy;&mcy;&ocy;&scy;&tcy;&ocy;&yacy;&tcy;&iecy;&lcy;&softcy;&ncy;&ocy; &zcy;&acy;&bcy;&rcy;&acy;&tcy;&softcy; &zcy;&acy;&kcy;&acy;&zcy; &icy;&zcy; &ncy;&acy;&shcy;&iecy;&gcy;&ocy; &mcy;&acy;&gcy;&acy;&zcy;&icy;&ncy;&acy;.</div>
+													</div>
+													<div style="clear: both;"></div>
+													<ul class="bx-soa-pp-list">
+														<li>
+															<div class="bx-soa-pp-list-termin">&Scy;&tcy;&ocy;&icy;&mcy;&ocy;&scy;&tcy;&softcy;:</div>
+															<div class="bx-soa-pp-list-description">0 &rcy;&ucy;&bcy;.</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<!-- Конец блока описания выбранной доставки-->
+										</div>
+										<!-- Блок ввода купона (представлен в другом блоке)-->
+										<!-- Блок с кнопкой далее и назад (представлен в другом блоке)-->
+									</div>
+								</div>
+								<!-- Конец блока выбора доставки-->
+								<!-- Блок выбора склада самовывоза-->
+								<div class="bx-soa-section bx-active bx-selected" id="bx-soa-pickup" data-visited="true">
+									<!-- Шапка любого шага-->
+									<div class="bx-soa-section-title-container">
+										<h2 class="bx-soa-section-title col-sm-9"><span class="bx-soa-section-title-count"></span>&Scy;&acy;&mcy;&ocy;&vcy;&ycy;&vcy;&ocy;&zcy;</h2>
+										<div class="col-xs-12 col-sm-3 text-right"><a class="bx-soa-editstep" href="">&icy;&zcy;&mcy;&iecy;&ncy;&icy;&tcy;&softcy;</a></div>
+									</div>
+									<!-- Конец шапки шага-->
+									<div class="bx-soa-section-content container-fluid">
+										<div class="bx_soa_pickup row">
+											<div class="col-xs-12">
+												<!-- Блок вывода карты-->
+												<!-- если будете инитить карту то лучше инитьте прямо тут в файле, а не в отдельном, так как битрикс будет инитить свою-->
+												<div id="pickUpMap"></div>
+												<!-- Конец вывода карты-->
+												<div class="bx-soa-pickup-subTitle">&Pcy;&ucy;&ncy;&kcy;&tcy;&ycy; &scy;&acy;&mcy;&ocy;&vcy;&ycy;&vcy;&ocy;&zcy;&acy;:</div>
+												<div class="bx-soa-pickup-list main">
+													<!-- Собственно сам склад-->
+													<div class="bx-soa-pickup-list-item bx-selected" id="store-1">
+														<!-- bx-selected - выбранный пункт. В остальных пунктах он не нужен-->
+														<div class="bx-soa-pickup-l-item-adress">&pcy;&rcy;. &Mcy;&ocy;&scy;&kcy;&ocy;&vcy;&scy;&kcy;&icy;&jcy; &dcy;. 51</div>
+														<div class="bx-soa-pickup-l-item-detail"><img class="bx-soa-pickup-l-item-img" src="/upload/resize_cache/catalog/0df/160_160_1/0dfefd23d21a6e075fa521c16bcc4fb8.jpg">
+															<div class="bx-soa-pickup-l-item-name">&Scy;&kcy;&lcy;&acy;&dcy;</div>
+															<div class="bx-soa-pickup-l-item-desc">&Acy;&dcy;&rcy;&iecy;&scy;: &pcy;&rcy;. &Mcy;&ocy;&scy;&kcy;&ocy;&vcy;&scy;&kcy;&icy;&jcy; &dcy;. 51<br>&Tcy;&iecy;&lcy;&iecy;&fcy;&ocy;&ncy;: 8 (495) 212 85 06<br>&Rcy;&iecy;&zhcy;&icy;&mcy; &rcy;&acy;&bcy;&ocy;&tcy;&ycy;: &Pcy;&ncy;.-&Pcy;&tcy;. &scy; 9:00 &dcy;&ocy; 20:00, &Scy;&bcy;.-&Vcy;&scy;. &scy; 11:00 &dcy;&ocy; 18:00<br>&Ocy;&pcy;&icy;&scy;&acy;&ncy;&icy;&iecy;: &Zcy;&dcy;&iecy;&scy;&softcy; &vcy;&ycy; &ncy;&acy;&jcy;&dcy;&iecy;&tcy;&iecy; &ocy;&dcy;&iecy;&zhcy;&dcy;&ucy; &vcy;&iecy;&dcy;&ucy;&shchcy;&icy;&khcy; &pcy;&rcy;&ocy;&icy;&zcy;&vcy;&ocy;&dcy;&icy;&tcy;&iecy;&lcy;&iecy;&jcy; &mcy;&icy;&rcy;&acy;<br></div>
+														</div>
+														<div class="bx-soa-pickup-l-item-btn"><a class="btn btn-sm btn-default" href="javascript:void()">&Vcy;&ycy;&bcy;&rcy;&acy;&tcy;&softcy;</a></div>
+													</div>
+													<!-- Конец склада-->
+													<!-- Собственно сам склад-->
+													<!-- .....-->
+													<!-- Собственно сам склад-->
+												</div>
+											</div>
+										</div>
+										<!-- Блок с кнопкой далее и назад (представлен в другом блоке)-->
+									</div>
+								</div>
+								<!-- Конец блока выбора самовывоза-->
+								<!-- Начало блока оплаты-->
+								<div class="bx-soa-section bx-active bx-selected" id="bx-soa-paysystem" data-visited="true">
+									<!-- Шапка любого шага-->
+									<div class="bx-soa-section-title-container">
+										<h2 class="bx-soa-section-title col-sm-9"><span class="bx-soa-section-title-count"></span>&Ocy;&pcy;&lcy;&acy;&tcy;&acy;</h2>
+										<div class="col-xs-12 col-sm-3 text-right"><a class="bx-soa-editstep" href="">&icy;&zcy;&mcy;&iecy;&ncy;&icy;&tcy;&softcy;</a></div>
+									</div>
+									<!-- Конец шапки шага-->
+									<div class="bx-soa-section-content container-fluid">
+										<!-- Блок ошибки-->
+										<div class="alert alert-danger"></div>
+										<!-- Конец блока ошибки-->
+										<div class="bx-soa-pp row">
+											<div class="col-sm-7 bx-soa-pp-item-container">
+												<!-- Блок оплаты-->
+												<div class="bx-soa-pp-company col-lg-4 col-sm-4 col-xs-6">
+													<div class="bx-soa-pp-company-graf-container">
+														<input class="bx-soa-pp-company-checkbox" id="ID_PAY_SYSTEM_ID_2" name="PAY_SYSTEM_ID" type="checkbox" value="2">
+														<div class="bx-soa-pp-company-image" style="background-image: url(&quot;/upload/resize_cache/sale/paysystem/logotip/d41/300_300_1/d4157fc219fa73b07474edf640df42d2.png&quot;);background-image: -webkit-image-set(url(&quot;/upload/resize_cache/sale/paysystem/logotip/d41/300_300_1/d4157fc219fa73b07474edf640df42d2.png&quot;) 1x, url(&quot;/upload/resize_cache/sale/paysystem/logotip/d41/600_600_1/d4157fc219fa73b07474edf640df42d2.png&quot;) 2x)"></div>
+													</div>
+													<div class="bx-soa-pp-company-smalltitle">&YAcy;&ncy;&dcy;&iecy;&kcy;&scy;.&Dcy;&iecy;&ncy;&softcy;&gcy;&icy;</div>
+												</div>
+												<!-- Конец блока оплаты-->
+												<!-- Выбранный Блок оплаты-->
+												<div class="bx-soa-pp-company col-lg-4 col-sm-4 col-xs-6 bx-selected">
+													<div class="bx-soa-pp-company-graf-container">
+														<input class="bx-soa-pp-company-checkbox" id="ID_PAY_SYSTEM_ID_3" name="PAY_SYSTEM_ID" type="checkbox" value="3">
+														<div class="bx-soa-pp-company-image" style="background-image: url(&quot;/upload/resize_cache/sale/paysystem/logotip/e54/300_300_1/e5429ed48f08411ba9ec70ec130b5e48.png&quot;);background-image: -webkit-image-set(url(&quot;/upload/resize_cache/sale/paysystem/logotip/e54/300_300_1/e5429ed48f08411ba9ec70ec130b5e48.png&quot;) 1x, url(&quot;/upload/sale/paysystem/logotip/e54/e5429ed48f08411ba9ec70ec130b5e48.png&quot;) 2x)"></div>
+													</div>
+													<div class="bx-soa-pp-company-smalltitle">&Bcy;&acy;&ncy;&kcy;&ocy;&vcy;&scy;&kcy;&icy;&iecy; &kcy;&acy;&rcy;&tcy;&ycy;</div>
+												</div>
+												<!-- Конец блока оплаты-->
+												<!-- Блок оплаты-->
+												<!-- ....-->
+												<!-- Блок оплаты-->
+											</div>
+											<!-- Блок описания выбранной оплаты-->
+											<div class="col-sm-5 bx-soa-pp-desc-container">
+												<div class="bx-soa-pp-company">
+													<div>
+														<div class="bx-soa-pp-company-subTitle">&Bcy;&acy;&ncy;&kcy;&ocy;&vcy;&scy;&kcy;&icy;&iecy; &kcy;&acy;&rcy;&tcy;&ycy;</div>
+														<div class="bx-soa-pp-company-logo">
+															<div class="bx-soa-pp-company-graf-container">
+																<div class="bx-soa-pp-company-image" style="background-image: url(&quot;/upload/resize_cache/sale/paysystem/logotip/e54/300_300_1/e5429ed48f08411ba9ec70ec130b5e48.png&quot;);background-image: -webkit-image-set(url(&quot;/upload/resize_cache/sale/paysystem/logotip/e54/300_300_1/e5429ed48f08411ba9ec70ec130b5e48.png&quot;) 1x, url(&quot;/upload/sale/paysystem/logotip/e54/e5429ed48f08411ba9ec70ec130b5e48.png&quot;) 2x)"></div>
+															</div>
+														</div>
+														<div class="bx-soa-pp-company-block">
+															<div class="bx-soa-pp-company-desc">&Ocy;&pcy;&lcy;&acy;&tcy;&acy; &pcy;&rcy;&ocy;&icy;&zcy;&vcy;&ocy;&dcy;&icy;&tcy;&scy;&yacy; &bcy;&acy;&ncy;&kcy;&ocy;&vcy;&scy;&kcy;&ocy;&jcy; &kcy;&acy;&rcy;&tcy;&ocy;&jcy; &chcy;&iecy;&rcy;&iecy;&zcy; &scy;&iecy;&rcy;&vcy;&icy;&scy; &YAcy;&ncy;&dcy;&iecy;&kcy;&scy;.&Kcy;&acy;&scy;&scy;&acy;. &Pcy;&ocy;&dcy;&tcy;&vcy;&iecy;&rcy;&zhcy;&dcy;&iecy;&ncy;&icy;&iecy;&mcy; &vcy;&acy;&shcy;&iecy;&jcy; &ocy;&pcy;&lcy;&acy;&tcy;&ycy; &yacy;&vcy;&lcy;&yacy;&iecy;&tcy;&scy;&yacy; &ecy;&lcy;&iecy;&kcy;&tcy;&rcy;&ocy;&ncy;&ncy;&ocy;&iecy; &pcy;&ocy;&chcy;&tcy;&ocy;&vcy;&ocy;&iecy; &ucy;&vcy;&iecy;&dcy;&ocy;&mcy;&lcy;&iecy;&ncy;&icy;&iecy;, &pcy;&rcy;&icy;&shcy;&iecy;&dcy;&shcy;&iecy;&iecy; &pcy;&ocy;&scy;&lcy;&iecy; &ocy;&pcy;&lcy;&acy;&tcy;&ycy;.</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Конец блока описания выбранной оплаты-->
+										</div>
+										<!-- Блок ввода купона (представлен в другом блоке)-->
+										<!-- Блок с кнопкой далее и назад (представлен в другом блоке)-->
+									</div>
+								</div>
+								<!-- Конец блока оплаты-->
+								<!-- Начало блока личных данных-->
+								<div class="bx-soa-section bx-active bx-selected" id="bx-soa-properties" data-visited="true">
+									<!-- Шапка любого шага-->
+									<div class="bx-soa-section-title-container">
+										<h2 class="bx-soa-section-title col-sm-9"><span class="bx-soa-section-title-count"></span>&Pcy;&ocy;&kcy;&ucy;&pcy;&acy;&tcy;&iecy;&lcy;&softcy;</h2>
+										<div class="col-xs-12 col-sm-3 text-right"><a class="bx-soa-editstep" href="">&icy;&zcy;&mcy;&iecy;&ncy;&icy;&tcy;&softcy;</a></div>
+									</div>
+									<!-- Конец шапки шага-->
+									<div class="bx-soa-section-content container-fluid">
+										<!-- Блок ошибки-->
+										<div class="alert alert-danger"></div>
+										<!-- Конец блока ошибки-->
+										<div class="row">
+											<div class="col-sm-12 bx-soa-customer">
+												<!-- Блок строкового свойства-->
+												<div class="form-group bx-soa-customer-field" data-property-id-row="1">
+													<label class="bx-soa-custom-label" for="soa-property-1">
+														<!-- Признак Обязательное свойство--><span class="bx-authform-starrequired">*</span>
+														<!-- Конец признака обязательного свойство-->&Fcy;.&Icy;.&Ocy;.
+													</label>
+													<div class="soa-property-container">
+														<input class="form-control bx-soa-customer-input bx-ios-fix" id="soa-property-1" type="text" size="40" name="ORDER_PROP_1" autocomplete="name" placeholder="">
+													</div>
+												</div>
+												<!-- Конец Блока строкового свойства-->
+												<!-- Блок чекбокса-->
+												<div class="form-group bx-soa-customer-field" data-property-id-row="20">
+													<label class="bx-soa-custom-label" for="soa-property-20">&CHcy;&iecy;&kcy;&bcy;&ocy;&kcy;&scy;</label>
+													<div class="soa-property-container">
+														<input type="hidden" name="ORDER_PROP_20" value="N">
+														<input type="checkbox" name="ORDER_PROP_20" value="Y">
+													</div>
+												</div>
+												<!-- Конец блока чекбокса-->
+												<!-- Блок строкового свойства с ошибкой-->
+												<div class="form-group bx-soa-customer-field has-error" data-property-id-row="2">
+													<label class="bx-soa-custom-label" for="soa-property-2">E-Mail</label>
+													<!-- Тултип с ошибкой-->
+													<div class="bx-soa-tooltip bx-soa-tooltip-static bx-soa-tooltip-danger tooltip top" id="tooltip-soa-property-2" data-state="opened" style="opacity: 1; display: block;">
+														<div class="tooltip-arrow"></div>
+														<div class="tooltip-inner">&Pcy;&ocy;&lcy;&iecy; &quot;E-Mail&quot; &ocy;&bcy;&yacy;&zcy;&acy;&tcy;&iecy;&lcy;&softcy;&ncy;&ocy; &dcy;&lcy;&yacy; &zcy;&acy;&pcy;&ocy;&lcy;&ncy;&iecy;&ncy;&icy;&yacy;</div>
+													</div>
+													<!-- Конец тултипа с ошибкой-->
+													<div class="soa-property-container">
+														<input class="form-control bx-soa-customer-input bx-ios-fix" id="soa-property-2" type="text" size="40" name="ORDER_PROP_2" autocomplete="email" placeholder="">
+													</div>
+												</div>
+												<!-- Конец блока строкового свойства с ошибкой-->
+												<!-- Блок селекта-->
+												<div class="form-group bx-soa-customer-field" data-property-id-row="21">
+													<label class="bx-soa-custom-label" for="soa-property-21">&Scy;&iecy;&lcy;&iecy;&kcy;&tcy;</label>
+													<div class="soa-property-container">
+														<select name="ORDER_PROP_21">
+															<option value="">&Ncy;&iecy; &vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ocy;</option>
+															<option value="1">&Pcy;&ucy;&ncy;&kcy;&tcy; 1</option>
+															<option value="2">&Pcy;&ucy;&ncy;&kcy;&tcy; 12</option>
+														</select>
+													</div>
+												</div>
+												<!-- Конец Блока селекта-->
+												<!-- Блок радиокнопок-->
+												<div class="form-group bx-soa-customer-field" data-property-id-row="22">
+													<label class="bx-soa-custom-label" for="soa-property-22">&Rcy;&acy;&dcy;&icy;&ocy;</label>
+													<div class="soa-property-container">
+														<div>
+															<label>
+																<input type="radio" name="ORDER_PROP_22" value="1"> 1
+															</label>
+														</div>
+														<div>
+															<label>
+																<input type="radio" name="ORDER_PROP_22" value="2"> 2
+															</label>
+														</div>
+													</div>
+												</div>
+												<!-- Конец блока радиокнопок-->
+												<!-- Блок с файлом-->
+												<div class="form-group bx-soa-customer-field" data-property-id-row="23">
+													<label class="bx-soa-custom-label" for="soa-property-23">&Fcy;&acy;&jcy;&lcy;</label>
+													<div class="soa-property-container">
+														<input class="btn btn-default btn-sm" type="button" value="Выбрать" style="margin: 5px 10px;"><a></a>
+														<input type="hidden" name="ORDER_PROP_23[ID]" value="">
+														<input type="file" name="ORDER_PROP_23" style="position: absolute; visibility: hidden;">
+													</div>
+												</div>
+												<!-- Конец блока с файлом-->
+												<!-- Блок TEXTAREA-->
+												<div class="form-group bx-soa-customer-field" data-property-id-row="7">
+													<label class="bx-soa-custom-label" for="soa-property-7"> &Acy;&dcy;&rcy;&iecy;&scy; &dcy;&ocy;&scy;&tcy;&acy;&vcy;&kcy;&icy;</label>
+													<div class="soa-property-container">
+														<textarea class="form-control bx-ios-fix" id="soa-property-7" cols="30" rows="3" name="ORDER_PROP_7" autocomplete="address" placeholder=""></textarea>
+													</div>
+												</div>
+												<!-- Блок свойства-->
+												<!-- .....-->
+												<!-- Блок свойства-->
+											</div>
+											<!-- Блок комментария к заказу-->
+											<!-- Он идет отдельно от остальных свойств-->
+											<div class="col-sm-12">
+												<div class="form-group bx-soa-customer-field">
+													<label class="bx-soa-customer-label" for="orderDescription">&Kcy;&ocy;&mcy;&mcy;&iecy;&ncy;&tcy;&acy;&rcy;&icy;&icy; &kcy; &zcy;&acy;&kcy;&acy;&zcy;&ucy;:</label>
+													<textarea class="form-control bx-soa-customer-textarea bx-ios-fix" id="orderDescription" cols="4" name="ORDER_DESCRIPTION"></textarea>
+												</div>
+											</div>
+											<!-- Конец блока комментария к заказу-->
+										</div>
+										<!-- Начало блока с кнопкой назад-->
+										<div class="row bx-soa-more">
+											<div class="bx-soa-more-btn col-xs-12"><a class="pull-left btn btn-default btn-md" href="javascript:void(0)">&Ncy;&acy;&zcy;&acy;&dcy;</a></div>
+										</div>
+										<!-- Конец блока с кнопкой назад-->
+									</div>
+								</div>
+								<!-- Конец блока личных данных-->
+								<!-- Блок сохранения заказа-->
+								<div id="bx-soa-orderSave">
+									<!-- Блок соглашения-->
+									<div class="checkbox">
+										<label class="main-user-consent-request">
+											<input type="checkbox" value="Y" checked="" name=""><span class="main-user-consent-request-announce-link">
+												&Ncy;&acy;&zhcy;&icy;&mcy;&acy;&yacy; &kcy;&ncy;&ocy;&pcy;&kcy;&ucy; &laquo;&Ocy;&fcy;&ocy;&rcy;&mcy;&icy;&tcy;&softcy; &zcy;&acy;&kcy;&acy;&zcy;&raquo;, &yacy; &dcy;&acy;&yucy; &scy;&vcy;&ocy;&iecy; &scy;&ocy;&gcy;&lcy;&acy;&scy;&icy;&iecy; &ncy;&acy; &ocy;&bcy;&rcy;&acy;&bcy;&ocy;&tcy;&kcy;&ucy; &mcy;&ocy;&icy;&khcy;
+												&pcy;&iecy;&rcy;&scy;&ocy;&ncy;&acy;&lcy;&softcy;&ncy;&ycy;&khcy; &dcy;&acy;&ncy;&ncy;&ycy;&khcy;, &vcy; &scy;&ocy;&ocy;&tcy;&vcy;&iecy;&tcy;&scy;&tcy;&vcy;&icy;&icy; &scy; &Fcy;&iecy;&dcy;&iecy;&rcy;&acy;&lcy;&softcy;&ncy;&ycy;&mcy; &zcy;&acy;&kcy;&ocy;&ncy;&ocy;&mcy; &ocy;&tcy; 27.07.2006 &gcy;&ocy;&dcy;&acy; &numero;152-&Fcy;&Zcy; &laquo;&Ocy; &pcy;&iecy;&rcy;&scy;&ocy;&ncy;&acy;&lcy;&softcy;&ncy;&ycy;&khcy; &dcy;&acy;&ncy;&ncy;&ycy;&khcy;&raquo;, &ncy;&acy; &ucy;&scy;&lcy;&ocy;&vcy;&icy;&yacy;&khcy; &icy; &dcy;&lcy;&yacy; &tscy;&iecy;&lcy;&iecy;&jcy;,
+												&ocy;&pcy;&rcy;&iecy;&dcy;&iecy;&lcy;&iecy;&ncy;&ncy;&ycy;&khcy; &vcy; &Scy;&ocy;&gcy;&lcy;&acy;&scy;&icy;&icy; &ncy;&acy; &ocy;&bcy;&rcy;&acy;&bcy;&ocy;&tcy;&kcy;&ucy; &pcy;&iecy;&rcy;&scy;&ocy;&ncy;&acy;&lcy;&softcy;&ncy;&ycy;&khcy; &dcy;&acy;&ncy;&ncy;&ycy;&khcy;</span>
+										</label>
+									</div>
+									<!-- Конец блока соглашения--><a class="pull-right btn btn-default btn-lg hidden-xs" href="javascript:void(0)" data-save-button="true">&Ocy;&fcy;&ocy;&rcy;&mcy;&icy;&tcy;&softcy; &zcy;&acy;&kcy;&acy;&zcy;</a>
+								</div>
+								<!-- Конец блока сохранения заказа-->
+							</div>
+							<!-- Блок правого сайдбара-->
+							<div class="col-sm-3 bx-soa-sidebar" id="bx-soa-total">
+								<div class="bx-soa-cart-total-ghost"></div>
+								<div class="bx-soa-cart-total bx-soa-cart-total-fixed">
+									<div class="bx-soa-cart-total-line"><span class="bx-soa-cart-t">&Tcy;&ocy;&vcy;&acy;&rcy;&ocy;&vcy; &ncy;&acy;:</span><span class="bx-soa-cart-d">0.12 &rcy;&ucy;&bcy;.<br><span class="bx-price-old">0.18 &rcy;&ucy;&bcy;.</span></span></div>
+									<div class="bx-soa-cart-total-line"><span class="bx-soa-cart-t">&Dcy;&ocy;&scy;&tcy;&acy;&vcy;&kcy;&acy;:</span><span class="bx-soa-cart-d">100 &rcy;&ucy;&bcy;.</span></div>
+									<div class="bx-soa-cart-total-line bx-soa-cart-total-line-highlighted"><span class="bx-soa-cart-t">&Ecy;&kcy;&ocy;&ncy;&ocy;&mcy;&icy;&yacy;:</span><span class="bx-soa-cart-d">0.06 &rcy;&ucy;&bcy;.</span></div>
+									<div class="bx-soa-cart-total-line bx-soa-cart-total-line-total"><span class="bx-soa-cart-t">&Icy;&tcy;&ocy;&gcy;&ocy;:</span><span class="bx-soa-cart-d" style="font-size: 28px;">100.12 &rcy;&ucy;&bcy;.</span></div>
+									<div class="bx-soa-cart-total-button-container visible-xs"><a class="btn btn-default btn-lg btn-order-save" href="javascript:void(0)">&Ocy;&fcy;&ocy;&rcy;&mcy;&icy;&tcy;&softcy; &zcy;&acy;&kcy;&acy;&zcy;</a></div>
+								</div>
+							</div>
+							<!-- Конец правого сайдбара-->
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer-wrp">
+				<div class="footer-menu">
+					<ul>
+						<div class="footer-menu__zag">Компания</div>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Вакансии</a></li>
+						<li><a href="#">Отзывы и предложения</a></li>
+					</ul>
+					<ul>
+						<div class="footer-menu__zag">Контакты для заказа</div>
+						<li class="_tel"><a href="tel:+375333331716">+375 <b>(33) 333-17-16</b></a></li>
+						<li class="_tel"><a href="tel:+375295153696">+375 <b>(29) 515-36-96</b></a></li>
+						<li><span>Прием заказов с 10:20 до 22:20</span></li>
+						<li><span>г. Гомель, ул. Свиридова 15-4</span></li>
+					</ul>
+				</div>
+				<div class="footer-links">
+					<div class="header-socials">
+						<div class="header-socials__zag">Мы в социальных сетях</div>
+						<div class="header-socials__items"><a class="header-socials__item" href="https://vk.com/durov">
+								<svg class="icon icon-vk ">
+									<use xlink:href="./img/svg/symbol/sprite.svg#vk"></use>
+								</svg></a><a class="header-socials__item" href="https://www.facebook.com/TheElonmusk/">
+								<svg class="icon icon-fb ">
+									<use xlink:href="./img/svg/symbol/sprite.svg#fb"></use>
+								</svg></a><a class="header-socials__item" href="https://www.instagram.com/joypizza.by/">
+								<svg class="icon icon-inst ">
+									<use xlink:href="./img/svg/symbol/sprite.svg#inst"></use>
+								</svg></a><a class="header-socials__item" href="https://www.tiktok.com/@joysushipizza">
+								<svg class="icon icon-tiktok ">
+									<use xlink:href="./img/svg/symbol/sprite.svg#tiktok"></use>
+								</svg></a></div>
+					</div>
+					<div class="footer-payments">
+						<div class="header-socials__zag">Способы оплаты</div>
+						<div class="footer-payments__img">
+							<picture><img class="lazy" src="./img/svg/visa.svg"></picture>
+							<picture><img class="lazy" src="./img/svg/visa2.svg"></picture>
+							<picture><img class="lazy" src="./img/svg/alfa.svg"></picture>
+							<picture><img class="lazy" src="./img/svg/mastercard2.svg"></picture>
+							<picture><img class="lazy" src="./img/svg/mastercard.svg"></picture>
+							<picture><img class="lazy" src="./img/svg/belkart.svg"></picture>
+							<picture><img class="lazy" src="./img/svg/belkart2.svg"></picture>
+							<picture><img class="lazy" src="./img/svg/pay.svg"></picture>
+							<picture><img class="lazy" src="./img/svg/pay2.svg"></picture>
+						</div>
+					</div>
+				</div>
+				<div class="footer-app">
+					<div class="footer-app__img">
+						<picture><img class="lazy" src="./img/src.gif" data-src="./img/footer-tel.png"></picture>
+					</div>
+					<div class="footer-app__info">
+						<div class="header-socials__zag">Скачайте наше мобильное приложение и совершайте быстрые заказы</div>
+						<div class="footer-app__desc">После скачивания приложения пройдите небольшую регистрацию, совершайте покупки и накапливайте баллы</div>
+						<div class="footer-app__btns"><a class="btn-green" href="#">
+								<svg class="icon icon-play ">
+									<use xlink:href="./img/svg/symbol/sprite.svg#play"></use>
+								</svg><span>Скачать в Google Play</span></a><a class="btn-green" href="#">
+								<svg class="icon icon-apple ">
+									<use xlink:href="./img/svg/symbol/sprite.svg#apple"></use>
+								</svg><span>Скачать в App Store</span></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-info">
+				<div class="footer-info__copyright">2021 © ООО «ДжойСтрит». Использование материалов сайта только с разрешения владельца</div>
+				<div class="footer-info__links"><a href="#">Договор публичной оферты</a><a href="#">Политика конфиденциальности</a><a href="#">Политика обработки данных</a></div>
+			</div>
+		</footer>
+		<script src="./libs/jquery.min.js"></script>
+		<script src="./libs/libs.min.js"></script>
+		<script src="./js/fv.js"></script>
+		<!--script(src="./libs/jquery.mCustomScrollbar.concat.min.js")-->
+		<!--script(src="./js/card.js")-->
+		<script src="./js/scripts.js"></script>
+	</body>
+</html>
