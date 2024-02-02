@@ -1,12 +1,13 @@
 import React from 'react';
+import Layout from '../components/Layout/Layout';
 
-function Catalogpage() {
-  return (
+const CatalogPage = () => (
+  <Layout template="basket">
     <div>
       <h1>Catalog page</h1>
-      <p1>Catalog page...</p1>
+      <p>Catalog page...</p>
     </div>
-  );
-}
+  </Layout>
+);
 
-export default Catalogpage;
+export default CatalogPage;

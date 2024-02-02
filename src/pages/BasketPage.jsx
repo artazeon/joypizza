@@ -1,13 +1,13 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
 
-const CardPpage = () => (
+const BasketPpage = () => (
   <Layout template="basket">
     <div>
-      <h1>Card page</h1>
-      <p>Card page...</p>
+      <h1>Basket page</h1>
+      <p>Basket page...</p>
     </div>
   </Layout>
 );
 
-export default CardPpage;
+export default BasketPpage;
