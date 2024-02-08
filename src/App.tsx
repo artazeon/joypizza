@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import './App.css';
+import './styles/index.scss';
 import HomePage from './pages/HomePage';
 import CatalogPage from './pages/CatalogPage';
 import CardPage from './pages/CardPage';

@@ -1,0 +1,22 @@
+// $base_url: '~@public/fonts/poppins/Poppins-';
+
+// $fontWeight: (
+//   'Regular': 400,
+//   'Medium': 500,
+//   'SemiBold': 600,
+//   'Bold': 700,
+//   'ExtraBold': 800,
+// );
+
+// @each $name, $weight in $fontWeight {
+//   @font-face {
+//     font-family: 'Poppins';
+//     src:
+//       url($base_url + $name + '.woff2') format('woff2'),
+//       url($base_url + $name + '.woff') format('woff');
+//     font-display: swap;
+//     font-style: normal;
+//     font-weight: $weight;
+//     font-stretch: normal;
+//   }
+// }

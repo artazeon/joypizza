@@ -1,5 +1,77 @@
 .header {
-  &_logo {
-    width: 50px;
+  min-height: 150px;
+  border-bottom: 1px solid silver;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 27px;
+    padding-right: 64px;
+    padding-bottom: 27px;
+    padding-left: 158px;
+  }
+
+  &__logo {
+    width: 141px;
+    height: 96px;
+  }
+
+  &__info {
+    display: flex;
+    column-gap: 106px;
+    align-items: center;
+  }
+
+  &__phone {
+    &-number {
+      border: 1px solid #d32626;
+      border-radius: 30px;
+      padding: 15px 30px;
+      color: #2f2f2f;
+      text-decoration: none;
+    }
+  }
+
+  &__social {
+    display: flex;
+    column-gap: 15px;
+  }
+
+  &__order-time {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 15px;
+
+    span {
+      padding-left: 5px;
+    }
+  }
+
+  &__sign {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 30px;
+  }
+
+  &__sign-login {
+    min-width: 170px;
+    border: 1px solid #2f2f2f;
+    border-radius: 30px;
+    padding: 15px 30px;
+    color: #2f2f2f;
+    text-align: center;
+  }
+
+  &__sign-basket {
+    display: flex;
+    min-width: 170px;
+    border-radius: 30px;
+    padding: 15px 30px;
+    background-color: #d32626;
+    color: #fff;
   }
 }
