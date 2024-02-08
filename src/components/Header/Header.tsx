@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../logo.svg';
+import './Header.scss';
 
 const Header = () => (
   <header className="App-header">
-    <img src={logo} className="App-logo" alt="logo" />
+    <img src={logo} className="header-logo" alt="logo" />
     <p>Welcom to Joy Pizza React App</p>
     <Link to="/">Home page</Link>
     <Link to="/catalog">Catalog page</Link>
