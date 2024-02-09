@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
 
-const CardPpage = () => (
+const CardPage = () => (
   <Layout template="basket">
     <div>
       <h1>Card page</h1>
@@ -10,4 +10,4 @@ const CardPpage = () => (
   </Layout>
 );
 
-export default CardPpage;
+export default CardPage;

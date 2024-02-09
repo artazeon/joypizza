@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout';
 
-const BasketPpage = () => (
+const BasketPage = () => (
   <Layout template="basket">
     <div>
       <h1>Basket page</h1>
@@ -10,4 +10,4 @@ const BasketPpage = () => (
   </Layout>
 );
 
-export default BasketPpage;
+export default BasketPage;
