@@ -24,13 +24,13 @@ const Header = () => (
             <div className="header__order-time-clock">
               <div className="header__order-time-short">
                 <span>вс-чт</span>
-                <span>
+                <span className="header__order-time-long_bold">
                   <b>10:20-22:30</b>
                 </span>
               </div>
               <div className="header__order-time-long">
                 <span>пт-сб</span>
-                <span>
+                <span className="header__order-time-long_bold">
                   <b>10:00-23:00</b>
                 </span>
               </div>
@@ -68,18 +68,22 @@ const Header = () => (
           </div>
         </div>
         <div className="header__sign">
-          <div className="header__sign-login">Войти</div>
-          <div className="header__sign-basket">
+          <a href="/" className="header__sign-login">
+            Войти
+          </a>
+          <a href="/" className="header__sign-basket">
             <img
               src="/images/svg/basket-logo.svg"
               className="header__sign-basket-image"
               alt="logo"
             />
-            <span>
-              <b>00,00 BYN</b>
-            </span>
-            <span>товаров: 0</span>
-          </div>
+            <div className="header__sign-basket-text">
+              <span className="header__sign-basket-text_bold">
+                <b>00,00 BYN</b>
+              </span>
+              <span>товаров: 0</span>
+            </div>
+          </a>
         </div>
       </div>
     </header>
