@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from '../components/Layout/Layout';
+import { Layout } from '../components/Layout/Layout';
 
-const BasketPpage = () => (
+export const BasketPpage = () => (
   <Layout template="basket">
     <div>
       <h1>Basket page</h1>
@@ -9,5 +9,3 @@ const BasketPpage = () => (
     </div>
   </Layout>
 );
-
-export default BasketPpage;

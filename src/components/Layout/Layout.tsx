@@ -1,52 +1,51 @@
-import React from 'react';
-import DefaultLayout from './DefaultLayout/DefaultLayout';
-import BasketLayout from './BasketLayout/BasketLayout';
+// import React from 'react';
+// import { IChildren } from './Interfaces';
+// import { DefaultLayout } from './DefaultLayout/DefaultLayout';
+// import { BasketLayout } from './BasketLayout/BasketLayout';
 
-interface ILayout {
+// interface ILayout extends IChildren {
+//   template?: 'default' | 'basket';
+// }
+
+// export const Layout = ({ template = 'default', children }: ILayout) => {
+//   switch (template) {
+//     case 'basket':
+//       return (
+//         <>
+//           <BasketLayout />
+//           {children}
+//           <BasketLayout />
+//         </>
+//       );
+
+//     default:
+//       return (
+//         <>
+//           <DefaultLayout />
+//           {children}
+//           <DefaultLayout />
+//         </>
+//       );
+//   }
+// };
+
+import React from 'react';
+import { IChildren } from './Interfaces';
+import { Basket } from '../Basket/Basket';
+
+interface ILayout extends IChildren {
   template?: 'default' | 'basket';
 }
 
-const Layout = ({ template }: ILayout) => {
-  switch (template) {
-    case 'basket':
-      return <BasketLayout />;
+export const Layout = ({ template = 'default', children }: ILayout) => (
+  <>
+    {template === 'basket' && (
+      <div className="layout-basket">
+        <div className="layout-content">{children}</div>
+        <Basket />
+      </div>
+    )}
 
-    default:
-      return <DefaultLayout />;
-  }
-};
-
-Layout.defaultProps = {
-  template: 'default',
-};
-
-export default Layout;
-
-// import React, { ReactElement } from 'react';
-// import Basket from '../Basket/Basket';
-
-// interface ILayout {
-//   template?: 'default' | 'basket';
-//   children: ReactElement | ReactElement[];
-// }
-
-// const Layout = ({ template, children }: ILayout) => (
-//   <>
-//     {template === 'basket' && (
-//       <div className="layout-basket">
-//         <div className="layout-content">{children}</div>
-//         <Basket />
-//       </div>
-//     )}
-
-//     {template === 'default' && (
-//       <div className="layout-content">D{children}</div>
-//     )}
-//   </>
-// );
-
-// Layout.defaultProps = {
-//   template: 'default',
-// };
-
-// export default Layout;
+    {template === 'default' && <div className="layout-content">{children}</div>}
+  </>
+);

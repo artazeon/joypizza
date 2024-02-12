@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from '../components/Layout/Layout';
+import { Layout } from '../components/Layout/Layout';
 
-const CardPpage = () => (
+export const CardPpage = () => (
   <Layout template="basket">
     <div>
       <h1>Card page</h1>
@@ -9,5 +9,3 @@ const CardPpage = () => (
     </div>
   </Layout>
 );
-
-export default CardPpage;

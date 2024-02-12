@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from '../components/Layout/Layout';
+import { Layout } from '../components/Layout/Layout';
 
-const CatalogPage = () => (
+export const CatalogPage = () => (
   <Layout template="basket">
     <div>
       <h1>Catalog page</h1>
@@ -9,5 +9,3 @@ const CatalogPage = () => (
     </div>
   </Layout>
 );
-
-export default CatalogPage;
