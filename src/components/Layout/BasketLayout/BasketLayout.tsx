@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import { Basket } from '../../Basket/Basket';
-import { IChildren } from '../Interfaces';
+import { IChildren } from '@interfaces/Interfaces';
 
 export const BasketLayout = ({ children }: IChildren) => (
   <div className="layout-basket">

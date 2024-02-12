@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { IChildren } from '../Interfaces';
+import { IChildren } from '@interfaces/Interfaces';
 
 export const DefaultLayout = ({ children }: IChildren) => (
   <div className="layout-basket">
