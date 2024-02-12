@@ -3,8 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import { HomePage } from './pages/HomePage';
 import { CatalogPage } from './pages/CatalogPage';
-import { CardPpage } from './pages/CardPage';
-import { BasketPpage } from './pages/BasketPage';
+import { CardPage } from './pages/CardPage';
+import { BasketPage } from './pages/BasketPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
@@ -17,8 +17,8 @@ const App = () => (
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/catalog" element={<CatalogPage />} />
-      <Route path="/catalog/card" element={<CardPpage />} />
-      <Route path="/cart" element={<BasketPpage />} />
+      <Route path="/catalog/card" element={<CardPage />} />
+      <Route path="/cart" element={<BasketPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
     <Footer />

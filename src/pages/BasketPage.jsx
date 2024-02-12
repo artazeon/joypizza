@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout } from '../components/Layout/Layout';
 
-export const BasketPpage = () => (
+export const BasketPage = () => (
   <Layout template="basket">
     <div>
       <h1>Basket page</h1>
