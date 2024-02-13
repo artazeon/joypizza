@@ -2,99 +2,88 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.scss';
 
-const Header = () => (
-  <>
-    <header className="header">
-      <div className="header__inner">
-        <div className="header__logo">
-          <img
-            src="/images/svg/logo.svg"
-            className="header__logo-image"
-            alt="logo"
-          />
+export const Header = () => (
+  <header className="header">
+    <div className="header__inner">
+      <div className="header__logo">
+        <img
+          src="/images/svg/logo.svg"
+          className="header__logo-image"
+          alt="logo"
+        />
+      </div>
+      <div className="header__info">
+        <div className="header__phone">
+          <a href="tel:+375293331933" className="header__phone-number">
+            +375 (29) 333-19-33
+          </a>
         </div>
-        <div className="header__info">
-          <div className="header__phone">
-            <a href="tel:+375293331933" className="header__phone-number">
-              +375 (29) 333-19-33
-            </a>
-          </div>
-          <div className="header__order-time">
-            <div className="header__order-time-info">Прём заказов:</div>
-            <div className="header__order-time-clock">
-              <div className="header__order-time-short">
-                <span>вс-чт</span>
-                <span className="header__order-time-long_bold">
-                  <b>10:20-22:30</b>
-                </span>
-              </div>
-              <div className="header__order-time-long">
-                <span>пт-сб</span>
-                <span className="header__order-time-long_bold">
-                  <b>10:00-23:00</b>
-                </span>
-              </div>
+        <div className="header__order-time">
+          <div className="header__order-time-info">Прём заказов:</div>
+          <div className="header__order-time-clock">
+            <div className="header__order-time-short">
+              <span>вс-чт</span>
+              <span className="header__order-time-long_bold">
+                <b>10:20-22:30</b>
+              </span>
+            </div>
+            <div className="header__order-time-long">
+              <span>пт-сб</span>
+              <span className="header__order-time-long_bold">
+                <b>10:00-23:00</b>
+              </span>
             </div>
           </div>
-          <div className="header__social">
-            <a href="/" className="header__social-item">
-              <img
-                src="/images/svg/vk-logo.svg"
-                className="header__social-item-image"
-                alt="logo"
-              />
-            </a>
-            <a href="/" className="header__social-item">
-              <img
-                src="/images/svg/instagram-logo.svg"
-                className="header__social-item-image"
-                alt="logo"
-              />
-            </a>
-            <a href="/" className="header__social-item">
-              <img
-                src="/images/svg/facebook-logo.svg"
-                className="header__social-item-image"
-                alt="logo"
-              />
-            </a>
-            <a href="/" className="header__social-item">
-              <img
-                src="/images/svg/tiktok-logo.svg"
-                className="header__social-item-image"
-                alt="logo"
-              />
-            </a>
-          </div>
         </div>
-        <div className="header__sign">
-          <a href="/" className="header__sign-login">
-            Войти
-          </a>
-          <a href="/" className="header__sign-basket">
+        <div className="header__social">
+          <a href="/" className="header__social-item">
             <img
-              src="/images/svg/basket-logo.svg"
-              className="header__sign-basket-image"
+              src="/images/svg/vk-logo.svg"
+              className="header__social-item-image"
               alt="logo"
             />
-            <div className="header__sign-basket-text">
-              <span className="header__sign-basket-text_bold">
-                <b>00,00 BYN</b>
-              </span>
-              <span>товаров: 0</span>
-            </div>
+          </a>
+          <a href="/" className="header__social-item">
+            <img
+              src="/images/svg/instagram-logo.svg"
+              className="header__social-item-image"
+              alt="logo"
+            />
+          </a>
+          <a href="/" className="header__social-item">
+            <img
+              src="/images/svg/facebook-logo.svg"
+              className="header__social-item-image"
+              alt="logo"
+            />
+          </a>
+          <a href="/" className="header__social-item">
+            <img
+              src="/images/svg/tiktok-logo.svg"
+              className="header__social-item-image"
+              alt="logo"
+            />
           </a>
         </div>
       </div>
-    </header>
-
-    <p>Welcom to Joy Pizza React App</p>
-    <Link to="/">Home page</Link>
-    <Link to="/catalog">Catalog page</Link>
-    <Link to="/catalog/card">Card page</Link>
-    <Link to="/cart">Cart page</Link>
-    <Link to="/404">404 page</Link>
-  </>
+      <div className="header__sign">
+        <a href="/" className="header__sign-login">
+          Войти
+        </a>
+        <a href="/" className="header__sign-basket">
+          <img
+            src="/images/svg/basket-logo.svg"
+            className="header__sign-basket-image"
+            alt="logo"
+          />
+          <div className="header__sign-basket-text">
+            <span className="header__sign-basket-text_bold">
+              <b>00,00 BYN</b>
+            </span>
+            <span>товаров: 0</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </header>
 );
-
-export default Header;

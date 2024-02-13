@@ -1,36 +1,31 @@
 import React from 'react';
-import DefaultLayout from './DefaultLayout/DefaultLayout';
-import BasketLayout from './BasketLayout/BasketLayout';
+import { IChildren } from '@interfaces/Interfaces';
+import { DefaultLayout } from './DefaultLayout/DefaultLayout';
+import { BasketLayout } from './BasketLayout/BasketLayout';
 
-interface ILayout {
+interface ILayout extends IChildren {
   template?: 'default' | 'basket';
 }
 
-const Layout = ({ template }: ILayout) => {
+export const Layout = ({ template = 'default', children }: ILayout) => {
   switch (template) {
     case 'basket':
-      return <BasketLayout />;
+      return <BasketLayout children={children} />;
 
     default:
-      return <DefaultLayout />;
+      return <DefaultLayout children={children} />;
   }
 };
 
-Layout.defaultProps = {
-  template: 'default',
-};
+// import React from 'react';
+// import { IChildren } from './Interfaces';
+// import { Basket } from '../Basket/Basket';
 
-export default Layout;
-
-// import React, { ReactElement } from 'react';
-// import Basket from '../Basket/Basket';
-
-// interface ILayout {
+// interface ILayout extends IChildren {
 //   template?: 'default' | 'basket';
-//   children: ReactElement | ReactElement[];
 // }
 
-// const Layout = ({ template, children }: ILayout) => (
+// export const Layout = ({ template = 'default', children }: ILayout) => (
 //   <>
 //     {template === 'basket' && (
 //       <div className="layout-basket">
@@ -39,14 +34,6 @@ export default Layout;
 //       </div>
 //     )}
 
-//     {template === 'default' && (
-//       <div className="layout-content">D{children}</div>
-//     )}
+//     {template === 'default' && <div className="layout-content">{children}</div>}
 //   </>
 // );
-
-// Layout.defaultProps = {
-//   template: 'default',
-// };
-
-// export default Layout;

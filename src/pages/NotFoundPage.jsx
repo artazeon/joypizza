@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Layout from '../components/Layout/Layout';
+import { Layout } from '../components/Layout/Layout';
 
-const NotfoundPage = () => (
+export const NotFoundPage = () => (
   <Layout>
     <h1>Notfound page</h1>
     <p>
@@ -10,5 +10,3 @@ const NotfoundPage = () => (
     </p>
   </Layout>
 );
-
-export default NotfoundPage;

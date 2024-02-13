@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
+import { IChildren } from '@interfaces/Interfaces';
 
-const DefaultLayout = () => (
-  <div className="layout-content">Default Layout</div>
+export const DefaultLayout = ({ children }: IChildren) => (
+  <div className="layout-basket">
+    <div className="layout-content">{children}</div>
+  </div>
 );
-
-export default DefaultLayout;

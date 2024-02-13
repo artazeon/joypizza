@@ -1,14 +1,14 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './styles/index.scss';
-import HomePage from './pages/HomePage';
-import CatalogPage from './pages/CatalogPage';
-import CardPage from './pages/CardPage';
-import BasketPage from './pages/BasketPage';
-import NotFoundPage from './pages/NotFoundPage';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Sidebar from './components/Sidebar/Sidebar';
+import { HomePage } from './pages/HomePage';
+import { CatalogPage } from './pages/CatalogPage';
+import { CardPage } from './pages/CardPage';
+import { BasketPage } from './pages/BasketPage';
+import { NotFoundPage } from './pages/NotFoundPage';
+import { Header } from './components/Header/Header';
+import { Footer } from './components/Footer/Footer';
+import { Sidebar } from './components/Sidebar/Sidebar';
 
 const App = () => (
   <div className="App">
