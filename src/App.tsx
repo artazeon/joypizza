@@ -1,11 +1,11 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import { HomePage } from './pages/Home-Page';
-import { CatalogPage } from './pages/Catalog-Page';
-import { CardPage } from './pages/Card-Page';
+import { HomePage } from './pages/HomePage';
+import { CatalogPage } from './pages/CatalogPage';
+import { CardPage } from './pages/CardPage';
 import { BasketPage } from './pages/BasketPage';
-import { NotFoundPage } from './pages/Not-Found-Page';
+import { NotFoundPage } from './pages/NotFoundPage';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
 import { Sidebar } from './components/Sidebar/Sidebar';
