@@ -144,6 +144,81 @@ export const Header = () => {
           <span className="header__burger-line"></span>
         </div>
       </div>
+
+      <nav className={`header__menu ${isOpened ? 'menu-opened' : ''}`}>
+        <ul className="header__menu-items">
+          <li className="header__menu-item">
+            <a href="#" className="header__menu-item-link">
+              Суши сеты
+            </a>
+          </li>
+          <li className="header__menu-item">
+            <a href="#" className="header__menu-item-link">
+              WOK
+            </a>
+          </li>
+          <li className="header__menu-item">
+            <a href="#" className="header__menu-item-link">
+              Комбо
+            </a>
+          </li>
+          <li className="header__menu-item">
+            <a href="#" className="header__menu-item-link">
+              Суши сеты
+            </a>
+          </li>
+          <li className="header__menu-item">
+            <a href="#" className="header__menu-item-link">
+              Ролы
+            </a>
+          </li>
+          <li className="header__menu-item">
+            <a href="#" className="header__menu-item-link">
+              Суши сеты
+            </a>
+          </li>
+          <li className="header__menu-item">
+            <a href="#" className="header__menu-item-link">
+              WOK
+            </a>
+          </li>
+          <li className="header__menu-item">
+            <a href="#" className="header__menu-item-link">
+              Комбо
+            </a>
+          </li>
+          <li className="header__menu-item">
+            <a href="#" className="header__menu-item-link">
+              Суши сеты
+            </a>
+          </li>
+          <li className="header__menu-item">
+            <a href="#" className="header__menu-item-link">
+              Ролы
+            </a>
+          </li>
+          <li className="header__menu-item">
+            <a href="#" className="header__menu-item-link">
+              Ролы
+            </a>
+          </li>
+          <li className="header__menu-item">
+            <a href="#" className="header__menu-item-link">
+              Ролы
+            </a>
+          </li>
+          <li className="header__menu-item">
+            <a href="#" className="header__menu-item-link">
+              Ролы
+            </a>
+          </li>
+          <li className="header__menu-item">
+            <a href="#" className="header__menu-item-link">
+              Ролы
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 };
