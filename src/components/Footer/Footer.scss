@@ -2,7 +2,12 @@
 //@import '~styles/variables.scss';
 
 .footer {
-  margin: 20px;
+  background-color: #f8f8f8;
+  margin-top: 40px;
+
+  &__inner {
+    padding: 20px;
+  }
   &__menu {
     display: flex;
     column-gap: 16px;
@@ -126,6 +131,7 @@
     &-download {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 20px;
 
       &-btn {
         display: flex;
@@ -173,6 +179,56 @@
       font-size: 14;
       font-weight: 400;
       margin-bottom: 25px;
+    }
+  }
+
+  &__payment {
+    margin-bottom: 20px;
+    &-title {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    &-logos {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 8px;
+      row-gap: 8px;
+      &-item {
+        width: 48px;
+        height: 31px;
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  &__text {
+    &-requisites {
+      font-size: 12px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    &-copyright {
+      font-size: 10px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    &-link {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      width: 100%;
+      column-gap: 10px;
+      row-gap: 10px;
+      &-item {
+        font-size: 10px;
+        font-weight: 400;
+        color: #2f2f2f;
+        text-decoration: none;
+      }
     }
   }
 }
