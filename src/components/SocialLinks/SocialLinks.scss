@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+//@import '~styles/variables.scss';
+
+.header {
+  &__social {
+    display: none;
+    @media (min-width: $breakpoint_md) {
+      display: flex;
+      column-gap: 5px;
+    }
+    @media (min-width: $breakpoint_lg) {
+      column-gap: 15px;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 53px;
+      height: 53px;
+      border: 1px solid #2f2f2f;
+      border-radius: 50%;
+
+      &:hover {
+        .header__social-item-image {
+          transform: scale(1.25);
+        }
+      }
+
+      &-image {
+        transition: 0.3s;
+      }
+    }
+  }
+}

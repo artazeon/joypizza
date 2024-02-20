@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { SocialLinks } from '../SocialLinks/SocialLinks';
+import { PhoneOrder } from '../PhoneOrder/PhoneOrder';
 import './Header.scss';
 
 export const Header = () => {
@@ -20,11 +22,12 @@ export const Header = () => {
           />
         </a>
         <div className="header__info">
-          <div className="header__phone">
+          <PhoneOrder />
+          {/* <div className="header__phone">
             <a href="tel:+375293331933" className="header__phone-number">
               +375 (29) 333-19-33
             </a>
-          </div>
+          </div> */}
           <div className="header__order-time">
             <div className="header__order-time-info">Прём заказов:</div>
             <div className="header__order-time-clock">
@@ -42,7 +45,8 @@ export const Header = () => {
               </div>
             </div>
           </div>
-          <div className="header__social">
+          <SocialLinks />
+          {/* <div className="header__social social">
             <a href="/" className="header__social-item">
               <svg
                 className="header__social-item-image"
@@ -113,7 +117,7 @@ export const Header = () => {
                 />
               </svg>
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="header__sign">
           <a href="/" className="header__sign-login">
