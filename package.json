@@ -18,10 +18,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "npm run build:icons & react-scripts start",
-    "dev": "npm run build:icons & npm run eslint -- --fix & npm run start",
-    "build": "npm run build:icons & react-scripts build",
-    "build:icons": "icons build -i ./src/icons -o ./src/icons-sprite --optimize",
+    "start": "react-scripts start",
+    "dev": "npm run eslint -- --fix & npm run start",
+    "build": "react-scripts build",
+    "build:icons": "icons build -i ./src/components/Icon/icons -o ./src/components/Icon/icons-sprite --optimize",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "eslint": "npx eslint .",
