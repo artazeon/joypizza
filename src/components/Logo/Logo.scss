@@ -1,0 +1,13 @@
+@import 'src/styles/variables.scss';
+//@import '~styles/variables.scss';
+
+.logo {
+  &__image {
+    width: 48px;
+    height: 33px;
+    @media (min-width: $breakpoint_md) {
+      width: 141px;
+      height: 96px;
+    }
+  }
+}

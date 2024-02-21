@@ -24,8 +24,6 @@ const App = () => {
         <Route path="/cart" element={<BasketPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-      {/* <Footer /> */}
-
       <Footer template={isDesktop && 'desktop'} />
     </div>
   );

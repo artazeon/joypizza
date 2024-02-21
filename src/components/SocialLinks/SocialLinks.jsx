@@ -1,16 +1,14 @@
 import React from 'react';
 import './SocialLinks.scss';
 
-const mainClass = 'header__social';
+const blockClass = 'social-link';
 
 export const SocialLinks = (className, mod) => {
   return (
-    // <div className={`${mainClass} ${mainClass}-${mod}`}>
-    //   <a href="/" className={`${mainClass}__social-item`}>
-    <div className="header__social">
-      <a href="/" className={`${mainClass}-item`}>
+    <>
+      <a href="/" className={`${blockClass}__item`}>
         <svg
-          className="header__social-item-image"
+          className={`${blockClass}__item-image`}
           width="20"
           height="11"
           viewBox="0 0 20 11"
@@ -25,9 +23,9 @@ export const SocialLinks = (className, mod) => {
           />
         </svg>
       </a>
-      <a href="/" className={`${mainClass}-item`}>
+      <a href="/" className={`social-link__item`}>
         <svg
-          className="header__social-item-image"
+          className={`${blockClass}__item-image`}
           width="20"
           height="20"
           viewBox="0 0 20 20"
@@ -48,9 +46,9 @@ export const SocialLinks = (className, mod) => {
           />
         </svg>
       </a>
-      <a href="/" className={`${mainClass}-item`}>
+      <a href="/" className={`social-link__item`}>
         <svg
-          className="header__social-item-image"
+          className={`${blockClass}__item-image`}
           width="11"
           height="20"
           viewBox="0 0 11 20"
@@ -63,9 +61,9 @@ export const SocialLinks = (className, mod) => {
           />
         </svg>
       </a>
-      <a href="/" className={`${mainClass}-item`}>
+      <a href="/" className={`social-link__item`}>
         <svg
-          className="header__social-item-image"
+          className={`${blockClass}__item-image`}
           width="16"
           height="19"
           viewBox="0 0 16 19"
@@ -78,6 +76,6 @@ export const SocialLinks = (className, mod) => {
           />
         </svg>
       </a>
-    </div>
+    </>
   );
 };
