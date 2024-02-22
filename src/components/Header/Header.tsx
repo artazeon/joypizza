@@ -18,13 +18,19 @@ export const Header = () => {
       : document.body.classList.remove('_overflow');
   };
 
+  const burgerLines = Array.from({ length: 4 }, (el, index) => (
+    <span key={index} className="header__burger-line"></span>
+  ));
+
   return (
     <header className="header">
       <div className="header__inner">
-        <Logo />
-        <div className="header__phone-order phone-order">
-          <OrderPhone />
+        <div className="header__logo logo">
+          <Logo />
         </div>
+        {/* <div className="header__order-phone order-phone">
+          <OrderPhone />
+        </div> */}
         <div className="header__order-time order-time">
           <OrderTime />
         </div>
@@ -39,10 +45,7 @@ export const Header = () => {
           onClick={handleBurgerClick}
           className={`header__burger ${isOpened ? 'opened' : ''}`}
         >
-          <span className="header__burger-line"></span>
-          <span className="header__burger-line"></span>
-          <span className="header__burger-line"></span>
-          <span className="header__burger-line"></span>
+          {burgerLines}
         </div>
       </div>
 

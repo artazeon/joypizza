@@ -10,4 +10,11 @@
       height: 96px;
     }
   }
+
+  &--small {
+    .logo__image {
+      width: 100px;
+      height: 68px;
+    }
+  }
 }

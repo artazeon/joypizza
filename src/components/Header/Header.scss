@@ -7,13 +7,12 @@ body {
   }
 }
 .header {
-  height: 100px;
-
   @media (min-width: $breakpoint_md) {
     height: 150px;
   }
 
   &__inner {
+    height: 100px;
     display: flex;
     position: fixed;
     z-index: 5;
@@ -27,14 +26,23 @@ body {
     padding-right: 20px;
     padding-bottom: 34px;
     padding-left: 20px;
-  }
 
-  &__phone-order {
+    @media (min-width: $breakpoint_md) {
+      height: 150px;
+      padding-top: 27px;
+      padding-right: 60px;
+      padding-bottom: 27px;
+      padding-left: 158px;
+    }
   }
 
   &__order-time {
     display: none;
     @media (min-width: $breakpoint_md) {
+      display: block;
+    }
+    @media (min-width: $breakpoint_lg) {
+      column-gap: 15px;
       display: flex;
     }
   }
@@ -44,9 +52,6 @@ body {
     @media (min-width: $breakpoint_md) {
       display: flex;
       column-gap: 5px;
-    }
-    @media (min-width: $breakpoint_lg) {
-      column-gap: 15px;
     }
   }
 

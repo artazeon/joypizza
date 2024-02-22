@@ -12,7 +12,7 @@ import { Sidebar } from './components/Sidebar/Sidebar';
 
 const App = () => {
   const isDesktop = window.innerWidth > 1300;
-  console.log(isDesktop);
+
   return (
     <div className="App">
       <Header />

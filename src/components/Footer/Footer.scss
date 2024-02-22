@@ -56,7 +56,6 @@
           text-decoration: none;
           transition: 0.3s;
           margin-bottom: 20px;
-          letter-spacing: 0%;
 
           &:hover {
             transition: 0.3s;
@@ -100,37 +99,19 @@
         height: 68px;
       }
     }
+
     &-social {
       display: flex;
       width: 70%;
-      column-gap: 5px;
-      justify-content: space-between;
-
-      &-item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 53px;
-        height: 53px;
-        border: 1px solid #d32626;
-        border-radius: 50%;
-
-        &:hover {
-          .footer__link-social-item-image {
-            transform: scale(1.25);
-          }
-        }
-
-        &-image {
-          transition: 0.3s;
-        }
-      }
+      column-gap: 18px;
     }
   }
   &__app {
     &-download {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      column-gap: 15px;
+
       margin-bottom: 20px;
 
       &-btn {

@@ -13,11 +13,24 @@
 
     &-image {
       transition: 0.3s;
+      fill: #2f2f2f;
     }
 
     &:hover {
       .social-link__item-image {
         transform: scale(1.25);
+      }
+    }
+  }
+
+  &--red {
+    .social-link__item {
+      border: 1px solid #d32626;
+      width: 40px;
+      height: 40px;
+
+      &-image {
+        fill: #d32626;
       }
     }
   }

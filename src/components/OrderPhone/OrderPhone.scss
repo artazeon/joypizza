@@ -24,4 +24,18 @@
       padding: 15px 30px;
     }
   }
+
+  &--big-size {
+    .order-phone__number {
+      font-size: 18px;
+      font-weight: 500;
+      border: 1px solid #d32626;
+      border-radius: 30px;
+      padding: 15px 25px;
+      color: #2f2f2f;
+      text-decoration: none;
+      transition: 0.3s;
+      margin-bottom: 20px;
+    }
+  }
 }
