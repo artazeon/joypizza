@@ -33,6 +33,7 @@ export const Footer = ({ template }) => {
                 <div className="footer__menu-order-title">
                   Контакты для заказа
                 </div>
+
                 <div className="footer__phone-order">
                   <OrderPhone mod="big-size" />
                 </div>
