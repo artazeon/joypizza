@@ -1,15 +1,27 @@
 import React from 'react';
-
+import classNames from 'classnames';
 import './Logo.scss';
+import { Img } from '../Img/Img';
 
-const blockClass = 'logo';
+const mainClass = 'logo';
 
-export const Logo = (className, mod) => {
+export const Logo = ({ className = '', mod }) => {
   return (
     <>
-      <a href="/" className="logo">
-        <img src="/images/svg/logo.svg" className="logo__image" alt="logo" />
-      </a>
+      <div
+        className={classNames(className, mainClass, {
+          [`${mainClass}--${mod}`]: mod,
+        })}
+      >
+        <a href="/" className="logo__link">
+          <Img
+            lazy
+            src="/images/svg/logo.svg"
+            className="logo__link-image"
+            alt="logo"
+          />
+        </a>
+      </div>
     </>
   );
 };

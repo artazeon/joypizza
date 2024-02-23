@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "visa"
+  },
+  {
+    "id": 2,
+    "name": "visa-seq"
+  },
+  {
+    "id": 3,
+    "name": "alfa"
+  },
+  {
+    "id": 4,
+    "name": "mc"
+  },
+  {
+    "id": 5,
+    "name": "mc2"
+  },
+  {
+    "id": 6,
+    "name": "belcard"
+  },
+  {
+    "id": 7,
+    "name": "belcard2"
+  },
+  {
+    "id": 8,
+    "name": "apple-pay"
+  },
+  {
+    "id": 9,
+    "name": "samsung-pay"
+  }
+]

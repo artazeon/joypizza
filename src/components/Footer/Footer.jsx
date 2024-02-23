@@ -2,6 +2,10 @@ import React from 'react';
 import { Logo } from '../Logo/Logo';
 import { OrderPhone } from '../OrderPhone/OrderPhone';
 import { SocialLinks } from '../SocialLinks/SocialLinks';
+import { Img } from '../Img/Img';
+
+import footerMenuList from '../../data/footer-menu-list.json';
+import paymentList from '../../data/payment-list.json';
 
 import './Footer.scss';
 
@@ -18,15 +22,11 @@ export const Footer = ({ template }) => {
               <div className="footer__menu-company">
                 <div className="footer__menu-company-title">Компания</div>
                 <ul className="footer__menu-company-items">
-                  <li className="footer__menu-company-item">Контакты</li>
-                  <li className="footer__menu-company-item">
-                    Доставка и оплата
-                  </li>
-                  <li className="footer__menu-company-item">
-                    Отзывы и предложения
-                  </li>
-                  <li className="footer__menu-company-item">Вакансии</li>
-                  <li className="footer__menu-company-item">Карта сайта</li>
+                  {footerMenuList.map((item) => (
+                    <li key={item.id} className="footer__menu-company-item">
+                      {item.title}
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div className="footer__menu-order">
@@ -34,9 +34,7 @@ export const Footer = ({ template }) => {
                   Контакты для заказа
                 </div>
 
-                <div className="footer__phone-order">
-                  <OrderPhone mod="big-size" />
-                </div>
+                <OrderPhone className="footer__phone-order" mod="big-size" />
 
                 <div className="footer__menu-order-time-clock">
                   Прием заказов с 10:20 до 22:20
@@ -50,13 +48,8 @@ export const Footer = ({ template }) => {
               </div>
             </div>
             <div className="footer__link">
-              <a href="/" className="footer__link-logo logo logo--small">
-                <Logo />
-              </a>
-
-              <div className="footer__link-social social-link social-link--red">
-                <SocialLinks />
-              </div>
+              <Logo className="footer__link-logo" mod="small" />
+              <SocialLinks className="footer__link-social" mod="red" />
             </div>
             <div className="footer__app">
               <div className="footer__app-title">
@@ -104,49 +97,66 @@ export const Footer = ({ template }) => {
               <div className="footer__payment">
                 <div className="footer__payment-title">Способы оплаты</div>
                 <div className="footer__payment-logos">
-                  <img
+                  {paymentList.map((el) => {
+                    <Img
+                      lazy
+                      key={el.id}
+                      src={'images/svg/payment/' + el.name + '.svg'}
+                      className="footer__payment-logos-item"
+                      alt="logo"
+                    />;
+                  })}
+                  <Img
+                    lazy
                     src="/images/svg/payment/visa.svg"
                     className="footer__payment-logos-item"
                     alt="logo"
                   />
-                  <img
+                  <Img
+                    lazy
                     src="/images/svg/payment/visa-seq.svg"
                     className="footer__payment-logos-item"
                     alt="logo"
                   />
-                  <img
+                  <Img
+                    lazy
                     src="/images/svg/payment/alfa.svg"
                     className="footer__payment-logos-item"
                     alt="logo"
                   />
-                  <img
+                  <Img
+                    lazy
                     src="/images/svg/payment/mc.svg"
                     className="footer__payment-logos-item"
                     alt="logo"
                   />
-                  <img
+                  <Img
+                    lazy
                     src="/images/svg/payment/mc2.svg"
                     className="footer__payment-logos-item"
                     alt="logo"
                   />
-                  <img
+                  <Img
+                    lazy
                     src="/images/svg/payment/belcard.svg"
                     className="footer__payment-logos-item"
                     alt="logo"
                   />
-                  <img
+                  <Img
+                    lazy
                     src="/images/svg/payment/belcard2.svg"
                     className="footer__payment-logos-item"
                     alt="logo"
                   />
-
-                  <img
+                  <Img
+                    lazy
                     src="/images/svg/payment/apple-pay.svg"
                     className="footer__payment-logos-item"
                     alt="logo"
                   />
 
-                  <img
+                  <Img
+                    lazy
                     src="/images/svg/payment/samsung-pay.svg"
                     className="footer__payment-logos-item"
                     alt="logo"

@@ -5,7 +5,7 @@ import { OrderPhone } from '../OrderPhone/OrderPhone';
 import { OrderTime } from '../OrderTime/OrderTime';
 import { SocialLinks } from '../SocialLinks/SocialLinks';
 import { Account } from '../Account/Account';
-import menuList from '../../data/menu-list.json';
+import headerMenuList from '../../data/header-menu-list.json';
 import './Header.scss';
 
 export const Header = () => {
@@ -25,23 +25,11 @@ export const Header = () => {
   return (
     <header className="header">
       <div className="header__inner">
-        <div className="header__logo logo">
-          <Logo />
-        </div>
-        <div className="header__order-phone">
-          <OrderPhone />
-        </div>
-
-        <div className="header__order-time order-time">
-          <OrderTime />
-        </div>
-        <div className="header__social-link social-link">
-          <SocialLinks />
-        </div>
-        <div className="header__account account">
-          <Account />
-        </div>
-
+        <Logo className="header__logo" />
+        <OrderPhone className="header__order-phone" />
+        <OrderTime className="header__order-time" />
+        <SocialLinks className="header__social-link" />
+        <Account className="header__account" />
         <div
           onClick={handleBurgerClick}
           className={`header__burger ${isOpened ? 'opened' : ''}`}
@@ -53,7 +41,7 @@ export const Header = () => {
       <div className={`header__menu ${isOpened ? 'menu-opened' : ''}`}>
         <nav className="header__menu-list-wrp">
           <ul className="header__menu-items">
-            {menuList.map((item) => (
+            {headerMenuList.map((item) => (
               <li key={item.id} className="header__menu-item">
                 <a href="#" className="header__menu-item-link">
                   {item.title}
@@ -63,15 +51,9 @@ export const Header = () => {
           </ul>
         </nav>
         <div className="header__menu-info">
-          <div className="header__order-time order-time">
-            <OrderTime />
-          </div>
-          <div className="header__account account">
-            <Account />
-          </div>
-          <div className="header__social-link social-link">
-            <SocialLinks />
-          </div>
+          <OrderTime className="header__menu-info-order-time" />
+          <Account className="header__menu-info-account" />
+          <SocialLinks className="header__menu-info-social-link" />
         </div>
       </div>
     </header>
