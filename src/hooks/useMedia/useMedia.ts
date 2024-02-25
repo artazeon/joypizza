@@ -39,12 +39,17 @@ export const useMedia = (): IUseMedia => {
     isMobile: false,
   });
 
+  let currentBreakPoint = 'default';
+
   const setUseMediaStateHandler = (): void => {
     const windowSize: number = getWindowSize();
     const isMobile: boolean = isMobileDevice();
     const { mediaName, mediaSize } = getBreakpointsData(windowSize);
 
-    setUseMediaState({ mediaName, mediaSize, windowSize, isMobile });
+    if (mediaName !== currentBreakPoint) {
+      currentBreakPoint = mediaName;
+      setUseMediaState({ mediaName, mediaSize, windowSize, isMobile });
+    }
   };
 
   useEffect(() => {
