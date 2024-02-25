@@ -39,7 +39,7 @@ export const useMedia = (): IUseMedia => {
     isMobile: false,
   });
 
-  let currentBreakPoint = 'default';
+  let currentBreakPoint: string = 'default';
 
   const setUseMediaStateHandler = (): void => {
     const windowSize: number = getWindowSize();
