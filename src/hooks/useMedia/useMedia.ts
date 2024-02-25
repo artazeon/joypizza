@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { IUseMedia } from './types';
 import { breakpoints } from 'src/constants/constants';
 
@@ -31,9 +32,30 @@ const getBreakpointsData = (
 };
 
 export const useMedia = (): IUseMedia => {
-  const windowSize: number = getWindowSize();
-  const isMobile: boolean = isMobileDevice();
-  const { mediaName, mediaSize } = getBreakpointsData(windowSize);
+  const [useMediaState, setUseMediaState] = useState<IUseMedia>({
+    mediaName: 'default',
+    mediaSize: 0,
+    windowSize: 0,
+    isMobile: false,
+  });
 
-  return { mediaName, mediaSize, windowSize, isMobile };
+  const setUseMediaStateHandler = (): void => {
+    const windowSize: number = getWindowSize();
+    const isMobile: boolean = isMobileDevice();
+    const { mediaName, mediaSize } = getBreakpointsData(windowSize);
+
+    setUseMediaState({ mediaName, mediaSize, windowSize, isMobile });
+  };
+
+  useEffect(() => {
+    setUseMediaStateHandler();
+
+    window.addEventListener('resize', setUseMediaStateHandler);
+
+    return () => {
+      window.removeEventListener('resize', setUseMediaStateHandler);
+    };
+  }, []);
+
+  return useMediaState;
 };
