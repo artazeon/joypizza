@@ -35,7 +35,28 @@
       color: #2f2f2f;
       text-decoration: none;
       transition: 0.3s;
-      margin-bottom: 20px;
+      &:hover {
+        transition: 0.3s;
+        color: #fff;
+        background-color: #d32626;
+      }
+    }
+  }
+  &--narrow-size {
+    .order-phone__number {
+      font-size: 18px;
+      font-weight: 500;
+      border: 1px solid #d32626;
+      border-radius: 30px;
+      padding: 11px 20px;
+      color: #2f2f2f;
+      text-decoration: none;
+      transition: 0.3s;
+      &:hover {
+        transition: 0.3s;
+        color: #fff;
+        background-color: #d32626;
+      }
     }
   }
 }

@@ -12,7 +12,7 @@ export const Account = ({ className, mod }) => {
           [`${mainClass}--${mod}`]: mod,
         })}
       >
-        <a href="/" className="account__login">
+        <a href="/" className={`${mainClass}__login`}>
           Войти
         </a>
         <a href="/" className="account__basket">
