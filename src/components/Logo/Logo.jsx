@@ -17,7 +17,7 @@ export const Logo = ({ className = '', mod }) => {
           <Img
             lazy
             src="/images/svg/logo.svg"
-            className="logo__link-image"
+            className={`${mainClass}__link-image`}
             alt="logo"
           />
         </a>

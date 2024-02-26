@@ -38,6 +38,11 @@
     color: #fff;
     transition: 0.3s;
 
+    &-image {
+      width: 18px;
+      height: 21px;
+    }
+
     &:hover {
       transition: 0.3s;
       color: #2f2f2f;
