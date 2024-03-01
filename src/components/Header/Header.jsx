@@ -10,6 +10,7 @@ import './Header.scss';
 
 export const Header = () => {
   const [isOpened, setIsOpened] = useState(false);
+  const isDesktope = window.innerWidth > 1300;
 
   const handleBurgerClick = () => {
     setIsOpened(!isOpened);
@@ -27,9 +28,14 @@ export const Header = () => {
       <div className="header__inner">
         <Logo className="header__logo" />
         <OrderPhone className="header__order-phone" />
-        <OrderTime className="header__order-time" />
-        <SocialLinks className="header__social-link" />
-        <Account className="header__account" />
+        {isDesktope && (
+          <>
+            <OrderTime className="header__order-time" />
+            <SocialLinks className="header__social-link" />
+            <Account className="header__account" />
+          </>
+        )}
+
         <div
           onClick={handleBurgerClick}
           className={`header__burger ${isOpened ? 'opened' : ''}`}

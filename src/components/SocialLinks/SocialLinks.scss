@@ -2,6 +2,9 @@
 //@import '~styles/variables.scss';
 
 .social-link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
   &__item {
     display: flex;
     align-items: center;

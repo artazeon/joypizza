@@ -45,7 +45,6 @@ body {
     display: none;
     @media (min-width: $breakpoint_md) {
       display: flex;
-      column-gap: 5px;
     }
   }
 
@@ -144,9 +143,9 @@ body {
       margin-top: 29px;
       padding-bottom: 30px;
       .order-time {
-        display: none;
-        @media (max-width: $breakpoint_md) {
-          display: flex;
+        display: flex;
+        @media (min-width: $breakpoint_md) {
+          display: none;
         }
       }
       .account {

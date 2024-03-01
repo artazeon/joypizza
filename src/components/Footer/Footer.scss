@@ -1,5 +1,7 @@
 @import '../../styles/variables.scss';
-//@import '~styles/variables.scss';
+//@import '@styles/variables.scss';
+
+// $logoWidth: 195px;
 
 .footer {
   background-color: #f8f8f8;
@@ -49,7 +51,7 @@
         &-number {
           font-size: 18px;
           font-weight: 500;
-          border: 1px solid #d32626;
+          border: 1px solid $red-main;
           border-radius: 30px;
           padding: 15px 25px;
           color: #2f2f2f;
@@ -60,7 +62,7 @@
           &:hover {
             transition: 0.3s;
             color: #fff;
-            background-color: #d32626;
+            background-color: $red-main;
           }
         }
       }
@@ -218,6 +220,11 @@
   }
 
   &-desktop {
+    --logoWidth: 195px;
+    // @media (min-width: $breakpoint_lg) {
+    //   --logoWidth: 300px;
+    // }
+
     background-color: #f8f8f8;
     &__inner {
       padding: 50px 60px 26px 426px;
@@ -229,7 +236,11 @@
     }
 
     &__logo {
-      margin-right: 54px;
+      width: var(--logoWidth);
+    }
+
+    &__column {
+      width: calc((100%-var(--logoWidth)) / 2);
     }
 
     &__menu {
@@ -266,11 +277,11 @@
         }
 
         &-social-link {
-          display: flex;
-          flex-wrap: wrap;
-          column-gap: 14px;
-          row-gap: 15px;
-          width: 120px;
+          // display: flex;
+          // flex-wrap: wrap;
+          gap: 14px 15px;
+
+          // width: 120px;
         }
       }
 
