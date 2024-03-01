@@ -9,20 +9,23 @@ import { NotFoundPage } from './pages/NotFoundPage';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
 import { Sidebar } from './components/Sidebar/Sidebar';
+import { MediaProvider } from './components/MediaProvider/MediaProvider';
 
 const App = () => (
-  <div className="App">
-    <Header />
-    <Sidebar />
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/catalog" element={<CatalogPage />} />
-      <Route path="/catalog/card" element={<CardPage />} />
-      <Route path="/cart" element={<BasketPage />} />
-      <Route path="*" element={<NotFoundPage />} />
-    </Routes>
-    <Footer />
-  </div>
+  <MediaProvider>
+    <div className="App">
+      <Header />
+      <Sidebar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/catalog" element={<CatalogPage />} />
+        <Route path="/catalog/card" element={<CardPage />} />
+        <Route path="/cart" element={<BasketPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+      <Footer />
+    </div>
+  </MediaProvider>
 );
 
 export default App;
