@@ -18,11 +18,6 @@ export const Account = ({ className, mod }) => {
         </a>
         <a href="/" className={`${mainClass}__basket`}>
           <Icon name="basket-logo" className={`${mainClass}__basket-image`} />
-          {/* <img
-            src="/images/svg/basket-logo.svg"
-            className="account__basket-image"
-            alt="logo"
-          /> */}
           <div className={`${mainClass}__basket-text`}>
             <span className={`${mainClass}__basket-text_bold`}>
               <b>00,00 BYN</b>

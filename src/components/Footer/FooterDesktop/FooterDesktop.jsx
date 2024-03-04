@@ -6,6 +6,7 @@ import { Img } from '../../Img/Img';
 import { Icon } from '../../Icon/Icon';
 import footerMenuList from '../../../data/footer-menu-list.json';
 import paymentList from '../../../data/payment-list.json';
+import './FooterDesktop.scss';
 
 export const FooterDesktop = () => {
   return (
@@ -13,75 +14,68 @@ export const FooterDesktop = () => {
       <div className="footer-desktop__inner">
         <div className="footer-desktop__wrp">
           <Logo className="footer-desktop__logo" />
-          <div className="footer-desktope__column">
-            <div className="footer-desktop__menu">
-              <div className="footer-desktop__menu-company">
-                <div className="footer-desktop__menu-company-title">
-                  Компания
-                </div>
-                <ul className="footer-desktop__menu-company-items">
-                  {footerMenuList.map((item) => (
-                    <li
-                      key={item.id}
-                      className="footer-desktop__menu-company-item"
+          <div className="footer-desktop__column">
+            <div className="footer-desktop__menu-links">
+              <div className="footer-desktop__menu-links-title">Компания</div>
+              <ul className="footer-desktop__menu-links-items">
+                {footerMenuList.map((item) => (
+                  <li key={item.id} className="footer-desktop__menu-links-item">
+                    <a
+                      href="#"
+                      className="footer-desktop__menu-links-item-link"
                     >
-                      <a
-                        href="#"
-                        className="footer-desktop__menu-company-item-link"
-                      >
-                        {item.title}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+                      {item.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
 
-                <SocialLinks
-                  className="footer-desktop__menu-company-social-link"
-                  mod="red"
-                />
+              <SocialLinks
+                className="footer-desktop__menu-links-social-link"
+                mod="red"
+              />
+            </div>
+            <div className="footer-desktop__menu-info">
+              <div className="footer-desktop__menu-info-title">
+                Контакты для заказа
               </div>
-              <div className="footer-desktop__menu-order">
-                <div className="footer-desktop__menu-order-title">
-                  Контакты для заказа
-                </div>
 
-                <OrderPhone
-                  className="footer-desktop__menu-order-phone-order"
-                  mod="narrow-size"
-                />
+              <OrderPhone
+                className="footer-desktop__menu-info-phone-order"
+                mod="narrow-size"
+              />
 
-                <div className="footer-desktop__menu-order-time-clock">
-                  Прием заказов с 10:20 до 22:20
-                </div>
-                <div className="footer-desktop__menu-order-order-adress">
-                  г. Гомель, ул. Свиридова 15-4
-                </div>
-                <div className="footer-desktop__menu-order-order-adress">
-                  г. Гомель, ул. Карбышева 9
-                </div>
+              <div className="footer-desktop__menu-info-time-clock">
+                Прием заказов с 10:20 до 22:20
+              </div>
+              <div className="footer-desktop__menu-info-order-adress">
+                г. Гомель, ул. Свиридова 15-4
+              </div>
+              <div className="footer-desktop__menu-info-order-adress">
+                г. Гомель, ул. Карбышева 9
+              </div>
 
-                <div className="footer-desktop__menu-order-payment">
-                  <div className="footer-desktop__menu-order-payment-title">
-                    Способы оплаты
-                  </div>
-                  <div className="footer-desktop__menu-order-payment-logos">
-                    {paymentList.map((el) => {
-                      return (
-                        <Img
-                          lazy
-                          key={el.id}
-                          src={'images/svg/payment/' + el.name + '.svg'}
-                          className="footer-desktop__menu-order-payment-logos-item"
-                          alt="logo"
-                        />
-                      );
-                    })}
-                  </div>
+              <div className="footer-desktop__menu-info-payment">
+                <div className="footer-desktop__menu-info-payment-title">
+                  Способы оплаты
+                </div>
+                <div className="footer-desktop__menu-info-payment-logos">
+                  {paymentList.map((el) => {
+                    return (
+                      <Img
+                        lazy
+                        key={el.id}
+                        src={'images/svg/payment/' + el.name + '.svg'}
+                        className="footer-desktop__menu-info-payment-logos-item"
+                        alt="logo"
+                      />
+                    );
+                  })}
                 </div>
               </div>
             </div>
           </div>
-          <div className="footer-desktope__column">
+          <div className="footer-desktop__column">
             <div className="footer-desktop__app">
               <div className="footer-desktop__app-wrp">
                 <div className="footer-desktop__app-title">

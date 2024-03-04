@@ -6,6 +6,7 @@ import { Img } from '../../Img/Img';
 import { Icon } from '../../Icon/Icon';
 import footerMenuList from '../../../data/footer-menu-list.json';
 import paymentList from '../../../data/payment-list.json';
+import './FooterMobile.scss';
 
 export const FooterMobile = () => {
   return (

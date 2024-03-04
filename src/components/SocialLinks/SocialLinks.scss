@@ -1,55 +1,75 @@
 @import '../../styles/variables.scss';
 //@import '~styles/variables.scss';
+@import '../../styles/mixins.scss';
 
 .social-link {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+  @media (min-width: $breakpoint_lg) {
+    gap: 15px;
+  }
+
   &__item {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 53px;
-    height: 53px;
-    border: 1px solid #2f2f2f;
+    width: 45px;
+    height: 45px;
+    border: 1px solid $black-main;
     border-radius: 50%;
+    @media (min-width: $breakpoint_lg) {
+      width: 53px;
+      height: 53px;
+    }
 
     &-image {
       transition: 0.3s;
-      fill: #2f2f2f;
-      color: #2f2f2f;
+
+      color: $black-main;
       width: 20px;
       height: 20px;
     }
 
-    &:hover {
+    @include hover {
+      border: 1px solid $red-main;
       .social-link__item-image {
-        transform: scale(1.25);
+        color: $red-main;
       }
     }
   }
 
   &--red {
     .social-link__item {
-      border: 1px solid #d32626;
-      width: 53px;
-      height: 53px;
+      border: 1px solid $red-main;
+      width: 45px;
+      height: 45px;
+      @media (min-width: $breakpoint_lg) {
+        width: 53px;
+        height: 53px;
+      }
+
+      @include hover {
+        border: 1px solid $black-main;
+        .social-link__item-image {
+          color: $black-main;
+        }
+      }
 
       &-image {
-        fill: #d32626;
-        color: #d32626;
+        color: $red-main;
       }
     }
   }
+
   &--small-red {
     .social-link__item {
-      border: 1px solid #d32626;
+      border: 1px solid $red-main;
       width: 40px;
       height: 40px;
 
       &-image {
-        fill: #d32626;
-        color: #d32626;
+        color: $red-main;
       }
     }
   }

@@ -6,23 +6,17 @@
   &__number {
     font-size: 16px;
     font-weight: 500;
-    border: 1px solid #d32626;
+    border: 1px solid $red-main;
     border-radius: 30px;
     padding: 6px 16px;
-    color: #2f2f2f;
+    color: $black-main;
     text-decoration: none;
     transition: 0.3s;
-
-    // &:hover {
-    //   transition: 0.3s;
-    //   color: #fff;
-    //   background-color: #d32626;
-    // }
 
     @include hover {
       transition: 0.3s;
       color: #fff;
-      background-color: #d32626;
+      background-color: $red-main;
     }
 
     @media (min-width: $breakpoint_md) {
@@ -36,33 +30,36 @@
     .order-phone__number {
       font-size: 18px;
       font-weight: 500;
-      border: 1px solid #d32626;
+      border: 1px solid $red-main;
       border-radius: 30px;
       padding: 15px 25px;
-      color: #2f2f2f;
+      color: $black-main;
       text-decoration: none;
       transition: 0.3s;
-      &:hover {
+      @include hover {
         transition: 0.3s;
         color: #fff;
-        background-color: #d32626;
+        background-color: $red-main;
       }
     }
   }
   &--narrow-size {
     .order-phone__number {
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 500;
-      border: 1px solid #d32626;
+      border: 1px solid $red-main;
       border-radius: 30px;
       padding: 11px 20px;
-      color: #2f2f2f;
+      color: $black-main;
       text-decoration: none;
       transition: 0.3s;
-      &:hover {
+      @media (min-width: $breakpoint_lg) {
+        font-size: 18px;
+      }
+      @include hover {
         transition: 0.3s;
         color: #fff;
-        background-color: #d32626;
+        background-color: $red-main;
       }
     }
   }
