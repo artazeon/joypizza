@@ -34,24 +34,33 @@ const getBreakpointsData = (
 };
 
 export const MediaProvider = ({ children }: IChildren) => {
+  let debounceTimer: ReturnType<typeof setTimeout>;
+  const observeElement: Element = document.body;
+
   const [useMediaState, setUseMediaState] =
     useState<IUseMedia>(useMediaDefaultData);
 
   const setUseMediaStateHandler = (): void => {
-    const windowSize: number = getWindowSize();
-    const isMobile: boolean = isMobileDevice();
-    const { mediaName, mediaSize } = getBreakpointsData(windowSize);
+    clearTimeout(debounceTimer);
 
-    setUseMediaState({ mediaName, mediaSize, windowSize, isMobile });
+    debounceTimer = setTimeout(() => {
+      const windowSize: number = getWindowSize();
+      const isMobile: boolean = isMobileDevice();
+      const { mediaName, mediaSize } = getBreakpointsData(windowSize);
+
+      setUseMediaState({ mediaName, mediaSize, windowSize, isMobile });
+    }, 150);
   };
+
+  const resizeObserver = new ResizeObserver(setUseMediaStateHandler);
 
   useEffect(() => {
     setUseMediaStateHandler();
 
-    window.addEventListener('resize', setUseMediaStateHandler);
+    resizeObserver.observe(observeElement);
 
     return () => {
-      window.removeEventListener('resize', setUseMediaStateHandler);
+      resizeObserver.unobserve(observeElement);
     };
   }, []);
 
