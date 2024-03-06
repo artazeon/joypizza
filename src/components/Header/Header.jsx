@@ -5,12 +5,13 @@ import { OrderPhone } from '../OrderPhone/OrderPhone';
 import { OrderTime } from '../OrderTime/OrderTime';
 import { SocialLinks } from '../SocialLinks/SocialLinks';
 import { Account } from '../Account/Account';
+import { RestaurantMenu } from './RestaurantMenu/RestaurantMenu';
 import headerMenuList from '../../data/header-menu-list.json';
 import './Header.scss';
 
 export const Header = () => {
   const [isOpened, setIsOpened] = useState(false);
-  const isDesktope = window.innerWidth > 1300;
+  const isDesktope = window.innerWidth >= 1300;
 
   const handleBurgerClick = () => {
     setIsOpened(!isOpened);
@@ -45,7 +46,8 @@ export const Header = () => {
       </div>
 
       <div className={`header__menu ${isOpened ? 'menu-opened' : ''}`}>
-        <nav className="header__menu-list-wrp">
+        <RestaurantMenu className="header__sidebar-restaurant-menu" />
+        {/* <nav className="header__menu-list-wrp">
           <ul className="header__menu-items">
             {headerMenuList.map((item) => (
               <li key={item.id} className="header__menu-item">
@@ -55,13 +57,22 @@ export const Header = () => {
               </li>
             ))}
           </ul>
-        </nav>
+        </nav> */}
         <div className="header__menu-info">
           <OrderTime className="header__menu-info-order-time" />
           <Account className="header__menu-info-account" />
           <SocialLinks className="header__menu-info-social-link" />
         </div>
       </div>
+
+      {isDesktope && (
+        <>
+          <div className="header__sidebar">
+            <RestaurantMenu className="header__sidebar-restaurant-menu" />
+            <SocialLinks className="header__sidebar-social-link" mod="red" />
+          </div>
+        </>
+      )}
     </header>
   );
 };

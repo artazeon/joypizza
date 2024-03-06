@@ -7,7 +7,7 @@ const mainClass = 'order-phone';
 export const OrderPhone = ({ className = '', mod }) => {
   return (
     <div
-      className={classNames(mainClass, className, {
+      className={classNames(className, mainClass, {
         [`${mainClass}--${mod}`]: mod,
       })}
     >

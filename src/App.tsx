@@ -11,7 +11,7 @@ import { Footer } from './components/Footer/Footer';
 import { Sidebar } from './components/Sidebar/Sidebar';
 
 const App = () => {
-  const isDesktop = window.innerWidth > 1300;
+  const isDesktop = window.innerWidth >= 1300;
 
   return (
     <div className="App">

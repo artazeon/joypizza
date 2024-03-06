@@ -8,21 +8,28 @@ body {
 }
 .header {
   @media (min-width: $breakpoint_md) {
-    height: 150px;
+    height: 100%;
+    width: 426px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    overflow-y: hidden;
   }
 
   &__inner {
     height: 100px;
     display: flex;
     position: fixed;
-    z-index: 5;
-    overflow-y: hidden;
+    top: 0;
+    left: 0;
     width: 100%;
     background-color: #fff;
     box-shadow: 0px 2px 15px rgba(47, 47, 47, 0.8);
     justify-content: space-between;
     align-items: center;
     padding: 34px 20px;
+    z-index: 1;
 
     @media (min-width: $breakpoint_md) {
       height: 150px;
@@ -109,29 +116,6 @@ body {
       left: 0;
       padding-top: 100px;
       overflow-y: auto;
-      &-list-wrp {
-      }
-    }
-
-    &-items {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-    &-item {
-      margin-bottom: 10px;
-      &-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        border-radius: 40px;
-        background-color: #f6f6f6;
-        font-size: 16px;
-        font-weight: 400;
-        color: $black-main;
-        text-decoration: none;
-        padding: 11px;
-      }
     }
 
     &-info {
@@ -150,17 +134,32 @@ body {
       }
       .account {
         display: none;
-        @media (max-width: $breakpoint_md) {
+        @media (min-width: $breakpoint_md) {
           display: flex;
         }
       }
       .social-link {
         display: none;
-        @media (max-width: $breakpoint_md) {
+        @media (min-width: $breakpoint_md) {
           display: flex;
           column-gap: 5px;
         }
       }
+    }
+  }
+
+  &__sidebar {
+    display: none;
+    @media (min-width: $breakpoint_md) {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      background-color: #fff;
+      height: 100vh;
+      padding: 180px 30px 70px 60px;
+      z-index: 3;
     }
   }
 }

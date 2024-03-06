@@ -3,7 +3,7 @@ import { Layout } from '../components/Layout/Layout';
 
 export const HomePage = () => (
   <Layout>
-    <div>
+    <div style={{ padding: '150px 0px 50px 426px' }}>
       <h1>Home page</h1>
       <p>
         Добро пожаловать в мир вкусной пиццы и суши от Joypizza.by! Мы рады
