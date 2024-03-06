@@ -134,13 +134,13 @@ body {
       }
       .account {
         display: none;
-        @media (min-width: $breakpoint_md) {
+        @media (max-width: $breakpoint_md) {
           display: flex;
         }
       }
       .social-link {
         display: none;
-        @media (min-width: $breakpoint_md) {
+        @media (max-width: $breakpoint_md) {
           display: flex;
           column-gap: 5px;
         }
@@ -160,6 +160,10 @@ body {
       height: 100vh;
       padding: 180px 30px 70px 60px;
       z-index: 3;
+    }
+
+    &-social-link {
+      margin-top: 20px;
     }
   }
 }

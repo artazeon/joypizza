@@ -8,7 +8,6 @@ import { BasketPage } from './pages/BasketPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
-import { Sidebar } from './components/Sidebar/Sidebar';
 
 const App = () => {
   const isDesktop = window.innerWidth >= 1300;

@@ -20,16 +20,15 @@
       width: 100%;
       border-radius: 40px;
       background-color: #f6f6f6;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 400;
       color: $black-main;
       text-decoration: none;
       padding: 11px;
       width: 100%;
       @media (min-width: $breakpoint_md) {
-        font-size: 18px;
-        padding: 14px;
-        line-height: 130%;
+        font-size: 16px;
+        padding: 12px 0 12px 0;
       }
     }
   }
