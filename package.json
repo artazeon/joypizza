@@ -20,11 +20,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "craco start",
     "dev": "npm run eslint -- --fix & npm run start",
-    "build": "react-scripts build",
+    "build": "craco build",
     "build:icons": "icons build -i ./src/components/Icon/icons -o ./src/components/Icon/icons-sprite --optimize",
-    "test": "react-scripts test",
+    "test": "craco test",
     "eject": "react-scripts eject",
     "eslint": "npx eslint .",
     "eslint:fix": "npx run eslint -- --fix",
@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@craco/craco": "^7.1.0",
     "@types/react-lazy-load-image-component": "^1.6.3",
     "eslint": "^8.56.0",
     "eslint-config-airbnb": "^19.0.4",
