@@ -1,0 +1,19 @@
+@import '@styles/variables.scss';
+
+.logo {
+  &__link-image {
+    width: 48px;
+    height: 33px;
+    @media (min-width: $breakpoint_md) {
+      width: 141px;
+      height: 96px;
+    }
+  }
+
+  &--small {
+    .logo__link-image {
+      width: 100px;
+      height: 68px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import '@styles/variables.scss';
+
+.order-time {
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 15px;
+
+  &-long {
+    &_bold {
+      padding-left: 5px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import '@styles/variables.scss';
+
+.restaurant-menu {
+  @media (min-width: $breakpoint_md) {
+    width: 336px;
+  }
+
+  &__items {
+    margin: 0 20px 0 20px;
+    @media (min-width: $breakpoint_md) {
+      margin: 0;
+    }
+  }
+  &__item {
+    margin-bottom: 10px;
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border-radius: 40px;
+      background-color: #f6f6f6;
+      font-size: 18px;
+      font-weight: 400;
+      color: $black-main;
+      text-decoration: none;
+      padding: 11px;
+      width: 100%;
+      @media (min-width: $breakpoint_md) {
+        font-size: 16px;
+        padding: 12px 0 12px 0;
+      }
+    }
+  }
+}
