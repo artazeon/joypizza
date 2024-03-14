@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { IChildren } from '@interfaces/Interfaces';
-import { breakpoints, useMediaDefaultData } from 'src/constants/constants';
-import { IUseMedia } from 'src/hooks/useMedia/types';
+import { Breakpoints, useMediaDefaultData } from 'src/constants/constants';
+import {
+  IBreakpointsName,
+  IBreakpointsValue,
+  IUseMedia,
+} from 'src/hooks/useMedia/types';
 import { MediaContext } from 'src/hooks/useMedia/MediaContext';
 
 const isMobileDevice = (): boolean =>
@@ -15,22 +19,20 @@ const getWindowSize = (): number => window.innerWidth;
 
 const getBreakpointsData = (
   windowSize: number,
-): { mediaName: string; mediaSize: number } => {
-  let mediaName: string = '';
-  let mediaSize: number = 0;
+): { mediaName: IBreakpointsName; mediaSize: IBreakpointsValue } => {
+  let mediaName: IBreakpointsName = 'default';
 
-  for (const key in breakpoints) {
-    const range: number[] = breakpoints[key];
-    const rangeMin: number = range[0];
-    const rangeMax: number = range[1];
+  for (const key in Breakpoints) {
+    const keyInBreakpoints = key as IBreakpointsName;
 
-    if (windowSize >= rangeMin && windowSize <= rangeMax) {
-      mediaName = key;
-      mediaSize = rangeMin;
+    if (windowSize < Breakpoints[keyInBreakpoints]) {
+      break;
     }
+
+    mediaName = keyInBreakpoints;
   }
 
-  return { mediaName, mediaSize };
+  return { mediaName, mediaSize: Breakpoints[mediaName] };
 };
 
 export const MediaProvider = ({ children }: IChildren) => {

@@ -1,13 +1,13 @@
-import { IBreakpoints, IUseMedia } from 'src/hooks/useMedia/types';
+import { IUseMedia } from 'src/hooks/useMedia/types';
 
-export const breakpoints: IBreakpoints = {
-  default: [0, 599],
-  xs: [600, 889],
-  sm: [990, 1299],
-  md: [1300, 1599],
-  lg: [1600, 1919],
-  xl: [1920, Infinity],
-};
+export const Breakpoints = {
+  default: 0,
+  xs: 600,
+  sm: 990,
+  md: 1300,
+  lg: 1600,
+  xl: 1920,
+} as const;
 
 export const useMediaDefaultData: IUseMedia = {
   mediaName: 'default',
