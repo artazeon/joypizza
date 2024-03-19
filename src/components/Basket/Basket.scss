@@ -1,0 +1,416 @@
+/*
+* TODO:
+* remove this styles after merge JOY-16
+*/
+@mixin button-reset-temp {
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/*
+* TODO:
+* remove this styles after merge JOY-16
+*/
+@mixin list-temp-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*
+* TODO:
+* replace this in mixins after merge JOY-16
+*/
+@mixin hide-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/*
+* TODO:
+* remove this to correct breakpoint after merge JOY-16
+*/
+@mixin breakpoint-600 {
+  @media (min-width: 601px) {
+    @content;
+  }
+}
+
+/*
+* TODO:
+* remove/replace/update this variables after merge JOY-16
+*/
+$red: #d32626;
+$red-light: #dd0d0d;
+$white: #fff;
+$gray-border: #d2d2d2;
+$gray-text: #a8a8a8;
+$black: #2f2f2f;
+$time: 0.3s;
+
+.basket {
+  --basket-padding-x: 20px;
+
+  @include breakpoint-600 {
+    --basket-padding-x: 40px;
+  }
+
+  display: grid;
+  gap: 50px;
+  max-width: 336px;
+  padding: 40px var(--basket-padding-x);
+  border-radius: 40px;
+  background: #fff8f2;
+  color: $black;
+}
+
+.basket-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  &__button {
+    @include button-reset-temp;
+
+    padding: 0;
+    font-size: 14px;
+    transition: color $time ease-in-out;
+    cursor: pointer;
+    color: $gray-text;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+.basket-body {
+  min-height: 560px;
+}
+
+.basket-placeholder {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__img {
+    max-width: 202px;
+    margin: auto;
+  }
+
+  &__text {
+    max-width: 254px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+}
+
+.basket-order {
+  --grid-gap: 35px;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--grid-gap);
+
+  &__list {
+    @include list-temp-reset;
+
+    --grid-gap: 25px;
+
+    display: grid;
+    gap: var(--grid-gap);
+  }
+
+  &__item {
+    padding-bottom: var(--grid-gap);
+    border-bottom: 1px solid $gray-border;
+  }
+
+  &__footer {
+    --order-footer-padding-x: 40px;
+
+    @include breakpoint-600 {
+      --order-footer-padding-x: 0px;
+    }
+
+    display: grid;
+    gap: inherit;
+    padding: 0 var(--order-footer-padding-x);
+  }
+}
+
+.basket-amount {
+  display: grid;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  &__value {
+    margin-bottom: 35px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #f5a31a;
+  }
+
+  &__button {
+    @include button-reset-temp;
+
+    width: 100%;
+    padding: 9px;
+    border-radius: 30px;
+    background-color: $red;
+    font-size: 18px;
+    text-align: center;
+    color: $white;
+    transition: background-color $time ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $red-light;
+    }
+  }
+}
+
+.basket-card {
+  $remove: 'remove';
+
+  &__head {
+    margin-bottom: 13px;
+    display: grid;
+    grid-template-columns: 140px auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  &__link {
+    transition: opacity $time ease-in-out;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &__img {
+    border-radius: 12px;
+    height: auto;
+  }
+
+  &__#{$remove} {
+    @include button-reset-temp;
+    color: $gray-text;
+    transition: color $time ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__#{$remove}-icon {
+    --icon-size: 14px;
+
+    display: block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+  }
+
+  &__body {
+    margin-bottom: 11px;
+    text-align: left;
+  }
+
+  &__title {
+    font-size: 18px;
+  }
+
+  &__data {
+    font-size: 16px;
+    color: $gray-text;
+  }
+
+  &__footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  &__price {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+.basket-counter {
+  $button: 'button';
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &__#{$button} {
+    @include button-reset-temp;
+
+    padding: 4px;
+    border-radius: 50%;
+    background-color: $red;
+    color: $white;
+    transition: background-color $time ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $red-light;
+    }
+  }
+
+  &__#{$button}-icon {
+    --icon-size: 13px;
+
+    display: block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+  }
+
+  &__input {
+    display: inline-block;
+    width: 20px;
+    padding: 0;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    background: transparent;
+    -moz-appearance: textfield;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}
+
+.basket-extra {
+  $list: 'list';
+  $card: 'card';
+  $card-add: #{#{$card}-add};
+
+  display: grid;
+  gap: 25px;
+  padding-bottom: var(--grid-gap);
+  border-bottom: 1px solid $gray-border;
+
+  &__title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__#{list} {
+    @include list-temp-reset;
+
+    margin: 0
+      calc(-1 * (var(--basket-padding-x) + var(--order-footer-padding-x)));
+    display: flex;
+    align-items: flex-start;
+    gap: inherit;
+    padding: 0 calc(var(--basket-padding-x) + var(--order-footer-padding-x));
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    @include hide-scrollbar;
+
+    @include breakpoint-600 {
+      margin: 0;
+      display: grid;
+      gap: 15px;
+      padding: 0;
+      overflow: unset;
+    }
+  }
+
+  &__#{list}-item {
+    min-width: 100%;
+    scroll-snap-align: center;
+  }
+
+  &__#{$card} {
+    position: relative;
+  }
+
+  &__#{$card}-link {
+    display: grid;
+    grid-template-columns: 39px 1fr;
+    grid-template-rows: min-content;
+    align-items: center;
+    gap: 3px 17px;
+    padding: 13px 22px;
+    border: 1px solid $gray-border;
+    border-radius: 20px;
+    text-align: left;
+    color: inherit;
+    transition:
+      color $time ease-in-out,
+      border-color $time ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+      color: $red;
+      border-color: $red;
+    }
+  }
+
+  &__#{$card}-img {
+    grid-row: span 2;
+  }
+
+  &__#{$card}-price {
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  &__#{$card-add} {
+    @include button-reset-temp;
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: $black;
+    transition: background-color $time ease-in-out;
+    transform: translate(50%, -50%);
+    color: $white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $red;
+    }
+  }
+
+  &__#{$card-add}-icon {
+    --icon-size: 13px;
+
+    display: block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    font-weight: 700;
+  }
+}
