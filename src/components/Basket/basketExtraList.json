@@ -1,0 +1,32 @@
+[
+  {
+    "id": "sauce-0",
+    "link": "#",
+    "image": "../../images/basket-card-sauce-0.png",
+    "title": "Соус сырный",
+    "price": 0.9,
+    "currency": "BYN",
+    "extra": true,
+    "amount": 1
+  },
+  {
+    "id": "sauce-1",
+    "link": "#",
+    "image": "../../images/basket-card-sauce-1.png",
+    "title": "Соевый соус",
+    "price": 0.9,
+    "currency": "BYN",
+    "extra": true,
+    "amount": 1
+  },
+  {
+    "id": "sauce-2",
+    "link": "#",
+    "image": "../../images/basket-card-sauce-2.png",
+    "title": "Имбирь",
+    "price": 0.9,
+    "currency": "BYN",
+    "extra": true,
+    "amount": 1
+  }
+]

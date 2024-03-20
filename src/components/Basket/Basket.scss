@@ -194,7 +194,7 @@ $time: 0.3s;
   &__head {
     margin-bottom: 13px;
     display: grid;
-    grid-template-columns: 140px auto;
+    grid-template-columns: repeat(2, min-content);
     justify-content: space-between;
     align-items: flex-start;
     gap: 16px;
@@ -209,8 +209,9 @@ $time: 0.3s;
   }
 
   &__img {
+    width: auto;
+    height: 70px;
     border-radius: 12px;
-    height: auto;
   }
 
   &__#{$remove} {
@@ -241,7 +242,7 @@ $time: 0.3s;
     font-size: 18px;
   }
 
-  &__data {
+  &__info {
     font-size: 16px;
     color: $gray-text;
   }
@@ -279,6 +280,11 @@ $time: 0.3s;
 
     &:hover {
       background-color: $red-light;
+    }
+
+    &:disabled {
+      pointer-events: none;
+      opacity: 0.5;
     }
   }
 
@@ -357,8 +363,7 @@ $time: 0.3s;
 
   &__#{$card}-link {
     display: grid;
-    grid-template-columns: 39px 1fr;
-    grid-template-rows: min-content;
+    grid-template-columns: 39px auto;
     align-items: center;
     gap: 3px 17px;
     padding: 13px 22px;
@@ -379,6 +384,7 @@ $time: 0.3s;
 
   &__#{$card}-img {
     grid-row: span 2;
+    max-width: 100%;
   }
 
   &__#{$card}-price {

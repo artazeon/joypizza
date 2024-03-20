@@ -1,0 +1,32 @@
+[
+  {
+    "id": "rolls-0",
+    "link": "#",
+    "image": "../../images/basket-card-rolls-0.png",
+    "title": "Филадельфия с креветкой",
+    "info": "290г",
+    "price": 11.9,
+    "currency": "BYN",
+    "amount": 1
+  },
+  {
+    "id": "pizza-0",
+    "link": "",
+    "image": "../../images/basket-card-pizza-0.png",
+    "title": "Деревенская",
+    "info": "470г",
+    "price": 12.5,
+    "currency": "BYN",
+    "amount": 1
+  },
+  {
+    "id": "sauce-0",
+    "link": "",
+    "image": "../../images/basket-card-sauce-0.png",
+    "title": "Соус сырный",
+    "price": 0.9,
+    "currency": "BYN",
+    "extra": true,
+    "amount": 1
+  }
+]
